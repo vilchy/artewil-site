@@ -1,0 +1,17 @@
+- id: x-trade-brokers
+  year: 2007-2008
+  client:
+    - language: en
+      label: X-Trade Brokers
+  streaming:
+    - platform: YouTube
+      handle: JPnDLoD1tuo
+
+- id: legg-mason
+  year: 2007
+  client:
+    - language: en
+      label: Legg Mason
+  streaming:
+    - platform: YouTube
+      handle: zPDE89-MhQc

@@ -1,0 +1,23 @@
+<div class="profile">
+    {{- with site.Params.profileMode }}
+    <div class="profile_inner">
+        <svg xmlns="http://www.w3.org/2000/svg" class="logo_img" height="115" width="115">
+            <title>{{ .imageTitle }}</title>
+            <use xlink:href="#logo-artewil"></use>
+        </svg>
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- partial "social_icons.html" site.Params.socialIcons -}}
+
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}">
+                <span class="button-inner">{{ .name }}</span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>

@@ -1,0 +1,21 @@
+- id: show-must-go-on
+  year: 2013
+  title:
+    - language: en
+      label: Show Must Go On!
+  link:
+    language: pl
+    url: https://www.requiem.wroclaw.pl/muzyka/mp3/show-must-go-on
+  music_by: '[Requiem](http://www.requiem.wroclaw.pl/ "{hreflang=''pl''}") (PL)'
+  streaming:
+    - platform: SoundCloud
+      handle: requiem-wroclaw
+    - platform: YouTube
+      handle: Jyk96vKu7es
+
+- id: kill-us-tomorrow
+  year: 2009
+  title:
+    - language: en
+      label: Kill Us Tomorrow
+  music_by: '[Frontline Attack](https://myspace.com/frontlineattackband "{lang=''en'' hreflang=''en''}") (PL)'

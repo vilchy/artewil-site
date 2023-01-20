@@ -1,0 +1,55 @@
+- id: cellist
+  year: 2010
+  title:
+    - language: en
+      label: Cellist
+    - language: pl
+      label: Wiolonczelista
+  director: '[Marek Cichy](https://vimeo.com/marekcichy "{lang=''pl''}")'
+  streaming:
+    - platform: YouTube
+      handle: 1X213QrAYfw
+    - platform: Spotify
+      handle: 4ctymCi3eDd5VnY8YI5DDL
+    - platform: Apple Music
+      handle: cellist-original-soundtrack/1484913345
+    - platform: Amazon Music
+      handle: B07ZL65FD8
+    - platform: YouTube Music
+      handle: OLAK5uy_kZHZTrJCbnMV-jWaLfV_eHOCFRe721mW0
+    - platform: Tidal
+      handle: 120976828
+    - platform: Deezer
+      handle: 116423892
+
+- id: go
+  year: 2007
+  title:
+    - language: pl
+      label: Idź
+  director: '[Marek Cichy](https://vimeo.com/marekcichy "{lang=''pl''}")'
+  streaming:
+    - platform: YouTube
+      handle: zAHoaBgW5_k
+
+- id: spaces
+  year: 2007
+  title:
+    - language: pl
+      label: Przestrzenie
+  link:
+    url: http://www.ewamartynkien.com/portfolio/przestrzenie/
+  director: '[Ewa Martynkien](http://www.ewamartynkien.com "{lang=''pl'' hreflang=''pl''}")'
+  streaming:
+    - platform: YouTube
+      handle: e0P9ROqisRo
+
+- id: leni
+  year: 2006
+  title:
+    - language: de
+      label: Leni
+  director: '[Bartosz Paduch](https://vimeo.com/user3999179 "{lang=''pl''}")'
+  streaming:
+    - platform: Vimeo
+      handle: 43502633

@@ -1,0 +1,13 @@
+<ul class="social-icons" {{ if ne site.Language.Lang "en" }}lang="en"{{ end }}>
+    {{- range . -}}
+    <li>
+        <a href="{{ trim .url " " }}" aria-labelledby="label-{{ .name | urlize }}"
+           {{ if isset . "hreflang" }}hreflang="{{ .hreflang }}"{{ end }}>
+            {{ partial "svg.html" . }}
+            <span id="label-{{ .name | urlize }}" class="hidden">
+                {{- .title | default .name -}}
+            </span>
+        </a>
+    </li>
+    {{- end -}}
+</ul>

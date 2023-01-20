@@ -1,0 +1,16 @@
+{{- if reflect.IsSlice . -}}
+  {{- range where . "language" site.Language.Lang -}}
+    {{- .label | markdownify -}}
+  {{- else -}}
+    {{- with index . 0 -}}
+      <span lang="{{ .language }}">{{ .label | markdownify }}</span>
+    {{- end -}}
+  {{- end -}}
+
+{{- else if reflect.IsMap . -}}
+  {{- index . site.Language.Lang | markdownify -}}
+
+{{- else -}}
+  {{- . | markdownify -}}
+
+{{- end -}}

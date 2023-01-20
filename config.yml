@@ -1,0 +1,41 @@
+baseURL: "/"
+title: ArteWil
+theme: PaperMod
+
+enableRobotsTXT: true
+
+disableKinds:
+  - taxonomy
+  - term
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+defaultContentLanguageInSubdir: true
+languages:
+  en:
+    languageName: English
+    weight: 1
+  pl:
+    languageName: Polski
+    weight: 2
+  de:
+    languageName: Deutsch
+    weight: 3
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+
+params:
+  env: production
+  title: ArteWil
+  keywords: [Portfolio]
+  author: Artur Wilniewczyc
+  images: ["/logo.png"]
+  DateFormat: "January 2, 2006"
+
+  assets:
+    disableFingerprinting: false

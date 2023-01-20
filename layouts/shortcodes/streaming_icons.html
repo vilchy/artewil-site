@@ -1,0 +1,3 @@
+{{- range (slice "amazon-music" "apple-music" "deezer" "soundcloud" "spotify" "tidal" "vimeo" "youtube" "youtube-music") -}}
+  {{- partial "svg" (dict "name" . "hidden" true) -}}
+{{- end -}}

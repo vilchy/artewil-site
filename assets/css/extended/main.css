@@ -1,0 +1,130 @@
+:root {
+    --main-width: 790px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo a svg {
+    border-radius: 0;
+    margin-inline-end: 2px;
+}
+
+.logo svg,
+.logo_img {
+    color: #007;
+}
+
+.logo_img {
+    filter: drop-shadow(3px 2px 2px rgb(0 0 0 / 0.3));
+    stroke-width: 0.5px;
+}
+
+.dark .logo svg {
+    color: #c3c3f6;
+}
+
+.dark .logo_img {
+    color: #bbe;
+    filter: drop-shadow(0 0 3px rgba(200, 200, 255, 0.7));
+}
+
+.logo-switches span.separator {
+    margin: auto 4px;
+}
+
+button#theme-toggle:focus {
+    outline: revert !important;
+}
+
+.profile .profile_inner h1 {
+    padding-top: 0;
+}
+
+.social-icons li {
+    display: inline-flex;
+    margin: auto 6px;
+}
+
+.music .post-content table th,
+.music .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+    padding: 0.5em 0.75em;
+}
+
+.music .post-content table td ul {
+    margin-bottom: 0.5em;
+}
+
+.music .post-header {
+    margin: 0 auto var(--content-gap) auto;
+}
+
+.music .post-content h2 {
+    margin: 24px auto 16px;
+    font-size: 23px;
+}
+
+.music td.title,
+.music td.client {
+    font-weight: bold;
+}
+
+.music table ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.music table td,
+.music table th {
+    min-width: 0 !important;
+}
+
+.music .additional_role,
+.music .event,
+.music .director {
+    display: none;
+}
+
+@media only screen and (min-width: 747px) {
+    .music .additional_role {
+        display: table-cell;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .music .event {
+        display: table-cell;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .music .director {
+        display: table-cell;
+    }
+}
+
+.streaming a {
+    box-shadow: none;
+    color: var(--secondary);
+}
+
+.streaming a:hover {
+    color: var(--primary);
+}
+
+.streaming a:not(:last-of-type) {
+    margin-inline-end: 9px;
+}
+
+.streaming a svg {
+    margin-top: 3px;
+    height: 22px;
+    width: 22px;
+}

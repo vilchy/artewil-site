@@ -1,0 +1,17 @@
+{{- $parsedTitle := dict -}}
+{{- with .Title -}}
+  {{- $parsedTitle = partial "functions/parse-title-attribute.html" . -}}
+{{- end -}}
+
+<a href="{{ .Destination | safeURL }}"
+  {{- with $parsedTitle.title }} title="{{ . }}"{{- end -}}
+  {{- with $parsedTitle.attributes -}}
+    {{- range $k, $v := . -}}
+      {{- /*  Display lang attributes only if they differ from current language */ -}}
+      {{- if or (and (ne $k "lang") (ne $k "hreflang")) (ne $v site.Language.Lang ) -}}
+        {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
+      {{- end -}}
+
+    {{- end -}}
+  {{- end -}}
+  >{{ .Text | safeHTML }}</a>

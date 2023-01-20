@@ -1,0 +1,23 @@
+description: ArteWil - tworzenie oprogramowania i miksowanie muzyki
+
+profileMode:
+  enabled: true
+  imageTitle: Logo ArteWil
+  subtitle: Tworzenie oprogramowania i miksowanie muzyki
+  buttons:
+    - name: Muzyka
+      url: muzyka
+
+socialIcons:
+  - name: LinkedIn
+    url: https://www.linkedin.com/company/artewil
+  - name: GitHub
+    url: https://github.com/vilchy
+    hreflang: en
+  - name: Pixabay
+    url: https://pixabay.com/pl/users/rotepian-14403633
+  - name: Discogs
+    url: https://www.discogs.com/artist/1884887-Artur-Wilniewczyc
+    hreflang: en
+  - name: YouTube
+    url: https://youtube.com/playlist?list=PLeMSV_3ixFZlS4cU7VSM3TujMToW2AqYo

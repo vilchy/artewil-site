@@ -1,0 +1,32 @@
+{{- $lang := site.Language.Lang -}}
+{{- if (eq .platform "Amazon Music") -}}
+https://music.amazon.{{ cond (eq $lang "de") "de" "com"}}/albums/{{ .handle -}}
+
+{{- else if (eq .platform "Apple Music") -}}
+https://music.apple.com/
+{{- cond (eq $lang "en") "us" $lang -}}
+/album/{{- .handle -}}
+{{- if eq $lang "pl" -}}?l=pl{{- end -}}
+
+{{- else if (eq .platform "Deezer") -}}
+https://www.deezer.com/album/{{ .handle -}}
+
+{{- else if (eq .platform "SoundCloud") -}}
+https://soundcloud.com/{{ .handle -}}
+
+{{- else if (eq .platform "Spotify") -}}
+https://open.spotify.com/album/{{ .handle -}}
+
+{{- else if (eq .platform "Tidal") -}}
+https://tidal.com/browse/album/{{ .handle -}}
+
+{{- else if (eq .platform "Vimeo") -}}
+https://vimeo.com/{{ .handle -}}
+
+{{- else if (eq .platform "YouTube") -}}
+https://www.youtube.com/watch?v={{ .handle -}}
+
+{{- else if (eq .platform "YouTube Music") -}}
+https://music.youtube.com/playlist?list={{ .handle -}}
+
+{{- end -}}

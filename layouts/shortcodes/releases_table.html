@@ -1,0 +1,55 @@
+{{- $data := index site.Data (split (.Get "data_id") "/") -}}
+{{- $columns := split (.Get "columns") "," -}}
+<table>
+  <thead>
+    <tr>
+      {{- range $columns -}}
+        <th scope="col" class="{{ . }}">
+          {{- T . -}}
+        </th>
+      {{- end -}}
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $row := $data -}}
+    <tr id="row-{{ $row.id }}">
+      {{- range $col := $columns -}}
+        {{- with $row -}}
+          {{ $val := index . $col }}
+          <td class="{{ $col }}" {{ if and (eq $col "streaming") (ne site.Language.Lang "en") }}lang="en"{{ end }}>
+            {{- if eq $col "title" -}}
+              {{- if .link -}}
+              <a href="{{ .link.url }}"
+                {{- if and .link.language (ne .link.language site.Language.Lang) -}}
+                  hreflang="{{ .link.language }}"
+                {{- end -}}>
+              {{- end -}}
+
+                <cite>{{- partial "get_for_current_language" .title -}}</cite>
+
+                {{- if .secondary_title -}}
+                  <br>
+                  (<cite>{{- partial "get_for_current_language" .secondary_title -}}</cite>)
+                {{- end -}}
+
+              {{- if .link -}}
+              </a>
+              {{- end -}}
+
+            {{- else if eq $col "streaming" -}}
+              {{- range .streaming -}}
+                {{- partial "streaming_link"
+                    (dict "platform" .platform "handle" .handle "name" $row.id) -}}
+              {{- end -}}
+
+            {{- else -}}
+              {{- partial "get_for_current_language" $val -}}
+
+            {{- end -}}
+          </td>
+        {{- end -}}
+      {{- end -}}
+    </tr>
+    {{- end -}}
+  </tbody>
+</table>

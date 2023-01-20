@@ -1,0 +1,18 @@
+{{- $parts := split . "{" -}}
+{{- $parts = apply $parts "trim" "." " " -}}
+{{- $parts = apply $parts "trim" "." "}" -}}
+{{- $title := index $parts 0 -}}
+{{- $temp := index $parts 1 -}}
+{{- $temp = split $temp "'" -}}
+{{- $temp = first (sub (len $temp) 1) $temp -}}
+{{- $temp = apply $temp "replace" "." "=" "" -}}
+{{- $temp = apply $temp "trim" "." " " -}}
+{{- $attributes := dict -}}
+{{- if $temp -}}
+  {{- range (seq 0 2 (sub (len $temp) 1)) -}}
+    {{- $attributes = merge $attributes (dict (index $temp . ) (index $temp (add 1 .))) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $parsedTitle := dict "title" $title "attributes" $attributes -}}
+{{- return $parsedTitle -}}

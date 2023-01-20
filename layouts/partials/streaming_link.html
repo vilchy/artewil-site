@@ -1,0 +1,10 @@
+{{- $platform_id := .platform | urlize -}}
+<a href="{{- partial "streaming_url" . -}}"
+   aria-labelledby="label-{{ .name }}-{{ $platform_id }}">
+     <svg>
+       <use xlink:href="#icon-{{- $platform_id -}}"></use>
+     </svg>
+    <span id="label-{{ .name }}-{{ $platform_id }}" class="hidden">
+        {{- .platform -}}
+    </span>
+</a>
