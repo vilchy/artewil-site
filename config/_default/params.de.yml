@@ -6,7 +6,7 @@ profileMode:
   subtitle: Softwareentwicklung und Musikmischung
   buttons:
     - name: Musik
-      url: musik
+      url: musik/
 
 socialIcons:
   - name: LinkedIn
@@ -15,7 +15,7 @@ socialIcons:
     url: https://github.com/vilchy
     hreflang: en
   - name: Pixabay
-    url: https://pixabay.com/de/users/rotepian-14403633
+    url: https://pixabay.com/de/users/rotepian-14403633/
   - name: Discogs
     url: https://www.discogs.com/artist/1884887-Artur-Wilniewczyc
   - name: YouTube
