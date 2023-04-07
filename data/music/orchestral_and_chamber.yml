@@ -91,6 +91,8 @@
       handle: pudlo-war-horns/1490864190
     - platform: Amazon Music
       handle: B082J3QD65
+    - platform: YouTube Music
+      handle: OLAK5uy_nJb-_hFDdRi6rFQpGDyIf2Tz-0r2hbxGQ
     - platform: Tidal
       handle: 125094270
     - platform: Deezer
@@ -138,6 +140,8 @@
       handle: when-titans-collide/1490346115
     - platform: Amazon Music
       handle: B082D512PK
+    - platform: YouTube Music
+      handle: OLAK5uy_mL_-_l0yRJTvUsCFTiIiZevOGjJJNBvWo
     - platform: Tidal
       handle: 124521416
     - platform: Deezer
