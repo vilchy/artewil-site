@@ -1,17 +1,17 @@
-{{- $parsedTitle := dict -}}
-{{- with .Title -}}
-  {{- $parsedTitle = partial "functions/parse-title-attribute.html" . -}}
-{{- end -}}
+{{- $title_segments := split .Title "|" -}}
 
 <a href="{{ .Destination | safeURL }}"
-  {{- with $parsedTitle.title }} title="{{ . }}"{{- end -}}
-  {{- with $parsedTitle.attributes -}}
-    {{- range $k, $v := . -}}
+  {{- with index $title_segments 0 }} title="{{ . }}"{{ end -}}
+  {{- $attrs_segments := last (sub ($title_segments | len) 1) $title_segments -}}
+  {{- range $attrs_segments -}}
+    {{- if . -}}
+      {{- $attribute := split . ":" -}}
+      {{- $key := index $attribute 0 -}}
+      {{- $val := index $attribute 1 -}}
       {{- /*  Display lang attributes only if they differ from current language */ -}}
-      {{- if or (and (ne $k "lang") (ne $k "hreflang")) (ne $v site.Language.Lang ) -}}
-        {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
+      {{- if or (and (ne $key "lang") (ne $key "hreflang")) (ne $val site.Language.Lang ) }}
+        {{ $key }}="{{ $val }}"
       {{- end -}}
-
     {{- end -}}
   {{- end -}}
-  >{{ .Text | safeHTML }}</a>
+>{{ .Text | safeHTML }}</a>

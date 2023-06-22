@@ -5,7 +5,7 @@
       label: Cellist
     - language: pl
       label: Wiolonczelista
-  director: '[Marek Cichy](https://vimeo.com/marekcichy "{lang=''pl''}")'
+  director: '[Marek Cichy](https://vimeo.com/marekcichy "|lang:pl")'
   streaming:
     - platform: YouTube
       handle: 1X213QrAYfw
@@ -27,7 +27,7 @@
   title:
     - language: pl
       label: Idź
-  director: '[Marek Cichy](https://vimeo.com/marekcichy "{lang=''pl''}")'
+  director: '[Marek Cichy](https://vimeo.com/marekcichy "|lang:pl")'
   streaming:
     - platform: YouTube
       handle: zAHoaBgW5_k
@@ -39,7 +39,7 @@
       label: Przestrzenie
   link:
     url: http://www.ewamartynkien.com/portfolio/przestrzenie/
-  director: '[Ewa Martynkien](http://www.ewamartynkien.com "{lang=''pl'' hreflang=''pl''}")'
+  director: '[Ewa Martynkien](http://www.ewamartynkien.com "|hreflang:pl|lang:pl")'
   streaming:
     - platform: YouTube
       handle: e0P9ROqisRo
@@ -49,7 +49,7 @@
   title:
     - language: de
       label: Leni
-  director: '[Bartosz Paduch](https://vimeo.com/user3999179 "{lang=''pl''}")'
+  director: '[Bartosz Paduch](https://vimeo.com/user3999179 "|lang:pl")'
   streaming:
     - platform: Vimeo
       handle: 43502633

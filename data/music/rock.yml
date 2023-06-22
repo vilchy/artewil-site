@@ -6,7 +6,7 @@
   link:
     language: pl
     url: https://www.requiem.wroclaw.pl/muzyka/mp3/show-must-go-on
-  music_by: '[Requiem](http://www.requiem.wroclaw.pl/ "{hreflang=''pl''}") (PL)'
+  music_by: '[Requiem](https://www.requiem.wroclaw.pl/ "|hreflang:pl") (PL)'
   streaming:
     - platform: SoundCloud
       handle: requiem-wroclaw
@@ -18,4 +18,4 @@
   title:
     - language: en
       label: Kill Us Tomorrow
-  music_by: '[Frontline Attack](https://myspace.com/frontlineattackband "{lang=''en'' hreflang=''en''}") (PL)'
+  music_by: '[Frontline Attack](https://myspace.com/frontlineattackband "|hreflang:en|lang:en") (PL)'
