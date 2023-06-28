@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ArteWil site
+Upstream-Contact: Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+Source: https://github.com/vilchy/artewil-site
+
+Files: static/*.png
+Copyright: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+License: LicenseRef-ArteWil
+
+Files: layouts/partials/icons/*
+Copyright: The Simple Icons contributors
+License: CC0-1.0

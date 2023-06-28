@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+#
+# SPDX-License-Identifier: LicenseRef-ArteWil
+
 - id: x-trade-brokers
   year: 2007-2008
   client:

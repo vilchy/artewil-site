@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+
+SPDX-License-Identifier: MIT
+-->
+
 {{- $lang := site.Language.Lang -}}
 {{- if (eq .platform "Amazon Music") -}}
 https://music.amazon.{{ cond (eq $lang "de") "de" "com"}}/albums/{{ .handle -}}

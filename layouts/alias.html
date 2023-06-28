@@ -1,5 +1,14 @@
+<!--
+SPDX-FileCopyrightText: 2022 The Hugo Authors
+
+SPDX-License-Identifier: Apache-2.0
+
+Copied and adapted from:
+https://github.com/gohugoio/hugo/
+-->
+
 <!DOCTYPE html>
-<html>
+<html {{ with site.LanguageCode | default site.Language.Lang }} lang="{{ . }}" {{ end }}>
 
 <head>
     <title>{{ .Permalink }}</title>
@@ -9,37 +18,14 @@
     <noscript>
         <meta http-equiv="refresh" content="0; url={{ .Permalink }}" />
     </noscript>
+    {{- $translate := resources.Get "js/translate.js" | minify -}}
+    <script>{{ $translate.Content | safeJS }}</script>
     <script>
         (function () {
             // redirect immediately if not root
             if (window.location.pathname !== '/') {
                 window.location.replace('{{ .Permalink }}');
                 return;
-            }
-
-            var getFirstBrowserLanguage = function () {
-                var nav = window.navigator,
-                    browserLanguagePropertyKeys = ['language', 'browserLanguage', 'systemLanguage', 'userLanguage'],
-                    i,
-                    language;
-
-                if (Array.isArray(nav.languages)) {
-                    for (i = 0; i < nav.languages.length; i++) {
-                        language = nav.languages[i];
-                        if (language && language.length) {
-                            return language;
-                        }
-                    }
-                }
-
-                // support for other well known properties in browsers
-                for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
-                    language = nav[browserLanguagePropertyKeys[i]]
-                    if (language && language.length) {
-                        return language
-                    }
-                }
-                return 'en';
             }
 
             var preferLang = getFirstBrowserLanguage();
@@ -55,7 +41,10 @@
 </head>
 
 <body>
-    <p>You should be redirected in a moment, if not, <a href="{{ .Permalink }}">click here</a>.</p>
+    <p>
+        If you are not redirected automatically,
+        <a href="{{ .Permalink }}">click here</a>.
+    </p>
 </body>
 
 </html>

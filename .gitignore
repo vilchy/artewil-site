@@ -1,3 +1,10 @@
+# SPDX-FileCopyrightText: The github/gitignore contributors
+#
+# SPDX-License-Identifier: CC0-1.0
+#
+# Copied and adapted from:
+# https://github.com/github/gitignore/
+
 # Generated files by hugo
 /public/
 /resources/_gen/
@@ -6,4 +13,3 @@ hugo_stats.json
 
 # Temporary lock file while building
 /.hugo_build.lock
-

@@ -1,4 +1,7 @@
 ---
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+# SPDX-License-Identifier: LicenseRef-ArteWil
+
 title: "Music"
 type: "music"
 description: "A selection of music mixed by ArteWil."

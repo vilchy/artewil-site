@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+
+SPDX-License-Identifier: MIT
+-->
+
 {{- $platform_id := .platform | urlize -}}
 <a href="{{- partial "streaming_url" . -}}"
    aria-labelledby="label-{{ .name }}-{{ $platform_id }}">
