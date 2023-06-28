@@ -20,19 +20,6 @@
     de: |
       * Musikalbum-Koproduktion,
       * [Musikvideo](https://www.youtube.com/watch?v=lvCzspBNB2o)-Koproduktion
-  streaming:
-    - platform: Spotify
-      handle: 24tcn5dZuZWoWmEmeqVVpr
-    - platform: Apple Music
-      handle: elements/1526714587
-    - platform: Amazon Music
-      handle: B08FDZ9MHM
-    - platform: YouTube Music
-      handle: OLAK5uy_m0loc3Rqvzoru7nK6Y-8rT8CA2wXkQtbs
-    - platform: Tidal
-      handle: 151362542
-    - platform: Deezer
-      handle: 165809102
 
 - id: missa-brevis
   year: 2019
@@ -43,19 +30,6 @@
     en: director of photography
     pl: operator filmowy
     de: Kameramann
-  streaming:
-    - platform: Spotify
-      handle: 16RjjKdwjJOKXYriL08Mqd
-    - platform: Apple Music
-      handle: missa-brevis/1581468670
-    - platform: Amazon Music
-      handle: B09CR1PBXK
-    - platform: YouTube Music
-      handle: OLAK5uy_k8Lo_lO8QK0zywwoKh3NLGAHs1BEB_CR4
-    - platform: Tidal
-      handle: 194348627
-    - platform: Deezer
-      handle: 252404702
 
 - id: calling-of-memories
   year: 2018
@@ -63,18 +37,8 @@
     - language: en
       label: Calling of Memories
   streaming:
-    - platform: Spotify
-      handle: 45cF2U4YsqejYTEDA517tg
-    - platform: Apple Music
-      handle: calling-of-memories-single/1530254091
-    - platform: Amazon Music
-      handle: B08H9KRR2C
-    - platform: YouTube Music
-      handle: OLAK5uy_ngPZ3Q5R0KesNTl-TarkBQ2OMDyt4v7_8
-    - platform: Tidal
-      handle: 154010329
-    - platform: Deezer
-      handle: 171148452
+    - platform: YouTube
+      handle: kwAHyiicCyc
 
 - id: war-horns
   year: 2017
@@ -88,19 +52,6 @@
     en: (co-mix)
     pl: (współmiks)
     de: (Ko-Mischung)
-  streaming:
-    - platform: Spotify
-      handle: 4WbopIgfSC78srcncmnWSj
-    - platform: Apple Music
-      handle: pudlo-war-horns/1490864190
-    - platform: Amazon Music
-      handle: B082J3QD65
-    - platform: YouTube Music
-      handle: OLAK5uy_nJb-_hFDdRi6rFQpGDyIf2Tz-0r2hbxGQ
-    - platform: Tidal
-      handle: 125094270
-    - platform: Deezer
-      handle: 122448792
 
 - id: violemi
   year: 2010
@@ -114,19 +65,6 @@
     en: album co-production, recording
     pl: nagrania, koprodukcja albumu
     de: Album-Koproduktion, Aufnahme
-  streaming:
-    - platform: Spotify
-      handle: 2lrhxfBiETzTN36xQGeJxc
-    - platform: Apple Music
-      handle: violemi/1499752589
-    - platform: Amazon Music
-      handle: B0852HB5DP
-    - platform: YouTube Music
-      handle: OLAK5uy_kImz3leiQvENfUW7H1QJMyeHexRzPd4Vc
-    - platform: Tidal
-      handle: 131920763
-    - platform: Deezer
-      handle: 132867822
 
 - id: when-titans-collide
   year: 2007
@@ -139,14 +77,12 @@
     de: Aufnahme
   streaming:
     - platform: Spotify
-      handle: 0faCZSWsewwg58bdtnczas
-    - platform: Apple Music
-      handle: when-titans-collide/1490346115
+      handle: 2t73oXcRIHZ2B8ok9COKee
     - platform: Amazon Music
-      handle: B082D512PK
+      handle: B0C7YVCG26
     - platform: YouTube Music
-      handle: OLAK5uy_mL_-_l0yRJTvUsCFTiIiZevOGjJJNBvWo
+      handle: OLAK5uy_kOPcPiEh8ETxfPUr4E2VjzsKpArhEOx9o
     - platform: Tidal
-      handle: 124521416
+      handle: 299703606
     - platform: Deezer
-      handle: 121898722
+      handle: 453000065

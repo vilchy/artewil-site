@@ -14,17 +14,13 @@
     - platform: YouTube
       handle: 1X213QrAYfw
     - platform: Spotify
-      handle: 4ctymCi3eDd5VnY8YI5DDL
-    - platform: Apple Music
-      handle: cellist-original-soundtrack/1484913345
+      handle: 35iyYjzK1JXdaLPWMtkadh
     - platform: Amazon Music
-      handle: B07ZL65FD8
-    - platform: YouTube Music
-      handle: OLAK5uy_kZHZTrJCbnMV-jWaLfV_eHOCFRe721mW0
+      handle: B0C7XMNLFV
     - platform: Tidal
-      handle: 120976828
+      handle: 299704147
     - platform: Deezer
-      handle: 116423892
+      handle: 452996855
 
 - id: go
   year: 2007
