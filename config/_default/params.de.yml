@@ -15,6 +15,9 @@ profileMode:
 socialIcons:
   - name: LinkedIn
     url: https://www.linkedin.com/company/artewil
+  - name: Codeberg
+    url: https://codeberg.org/vilchy
+    hreflang: en
   - name: GitHub
     url: https://github.com/vilchy
     hreflang: en

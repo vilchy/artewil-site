@@ -15,6 +15,8 @@ profileMode:
 socialIcons:
   - name: LinkedIn
     url: https://www.linkedin.com/company/artewil
+  - name: Codeberg
+    url: https://codeberg.org/vilchy
   - name: GitHub
     url: https://github.com/vilchy
   - name: Pixabay
