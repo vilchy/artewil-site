@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+#
+# SPDX-License-Identifier: LicenseRef-ArteWil
+
+- id: nonduno
+  year: 2023
+  title:
+    - language: es
+      label: Nonduno
+  music_by: Rotepian
+  streaming:
+    - platform: Bandcamp
+      artist: rotepian
+      handle: track/nonduno
+    - platform: SoundCloud
+      handle: rotepian/nonduno
+
+- id: november-snow
+  year: 2008
+  title:
+    - language: en
+      label: November Snow
+    - language: pl
+      label: Śniegopad
+  music_by: Rotepian
+  streaming:
+    - platform: Bandcamp
+      artist: rotepian
+      handle: track/november-snow
+    - platform: SoundCloud
+      handle: rotepian/november-snow

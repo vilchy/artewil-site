@@ -26,6 +26,10 @@ unless otherwise stated.
 
 {{< releases_table data_id="music/film" columns="year,title,director,streaming" >}}
 
+## Piano music
+
+{{< releases_table data_id="music/piano" columns="year,title,music_by,streaming" >}}
+
 ## Rock music
 
 {{< releases_table data_id="music/rock" columns="year,title,music_by,streaming" >}}

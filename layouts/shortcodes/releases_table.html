@@ -45,7 +45,7 @@ SPDX-License-Identifier: MIT
             {{- else if eq $col "streaming" -}}
               {{- range .streaming -}}
                 {{- partial "streaming_link"
-                    (dict "platform" .platform "handle" .handle "name" $row.id) -}}
+                    (dict "platform" .platform "artist" .artist "handle" .handle "name" $row.id) -}}
               {{- end -}}
 
             {{- else -}}

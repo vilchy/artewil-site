@@ -27,6 +27,10 @@ sofern nicht anders angegeben.
 
 {{< releases_table data_id="music/film" columns="year,title,director,streaming" >}}
 
+## Klaviermusik
+
+{{< releases_table data_id="music/piano" columns="year,title,music_by,streaming" >}}
+
 ## Rockmusik
 
 {{< releases_table data_id="music/rock" columns="year,title,music_by,streaming" >}}

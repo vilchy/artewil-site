@@ -27,6 +27,10 @@ o ile nie zaznaczono inaczej.
 
 {{< releases_table data_id="music/film" columns="year,title,director,streaming" >}}
 
+## Muzyka na fortepian
+
+{{< releases_table data_id="music/piano" columns="year,title,music_by,streaming" >}}
+
 ## Rock
 
 {{< releases_table data_id="music/rock" columns="year,title,music_by,streaming" >}}

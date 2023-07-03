@@ -4,6 +4,6 @@ SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
 SPDX-License-Identifier: MIT
 -->
 
-{{- range (slice "amazon-music" "apple-music" "deezer" "soundcloud" "spotify" "tidal" "vimeo" "youtube" "youtube-music") -}}
+{{- range (slice "amazon-music" "apple-music" "bandcamp" "deezer" "soundcloud" "spotify" "tidal" "vimeo" "youtube" "youtube-music") -}}
   {{- partial "svg" (dict "name" . "hidden" true) -}}
 {{- end -}}
