@@ -22,12 +22,33 @@ languages:
   en:
     languageName: English
     weight: 1
+    menu:
+      main:
+        - name: Software
+          url: software/
+          weight: 5
+        - name: Music
+          url: music/
   pl:
     languageName: Polski
     weight: 2
+    menu:
+      main:
+        - name: Oprogramowanie
+          url: oprogramowanie/
+          weight: 5
+        - name: Muzyka
+          url: muzyka/
   de:
     languageName: Deutsch
     weight: 3
+    menu:
+      main:
+        - name: Software
+          url: software/
+          weight: 5
+        - name: Musik
+          url: musik/
 
 pygmentsUseClasses: true
 markup:

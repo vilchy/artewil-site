@@ -9,6 +9,8 @@ profileMode:
   imageTitle: Logo ArteWil
   subtitle: Tworzenie oprogramowania i miksowanie muzyki
   buttons:
+    - name: Oprogramowanie
+      url: oprogramowanie/
     - name: Muzyka
       url: muzyka/
 

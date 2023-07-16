@@ -9,6 +9,8 @@ profileMode:
   imageTitle: ArteWil-Logo
   subtitle: Softwareentwicklung und Musikmischung
   buttons:
+    - name: Software
+      url: software/
     - name: Musik
       url: musik/
 
