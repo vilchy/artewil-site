@@ -23,6 +23,18 @@
   streaming:
     - platform: YouTube
       handle: LF1h-KFjIR4
+    - platform: Spotify
+      handle: 7oLkYjVKHXT4cem4kJ1way
+    - platform: Apple Music
+      handle: welcome-to-poland-and-ukraine-single/1698162772
+    - platform: Amazon Music
+      handle: B0CC6GZQY1
+    - platform: YouTube Music
+      handle: OLAK5uy_nUHZuV3vIHwyBwQkSWydcELbznFfRwPT8
+    - platform: Tidal
+      handle: 305493997
+    - platform: Deezer
+      handle: 465870385
 
 - id: seasons-of-poland
   year: 2011
@@ -36,3 +48,14 @@
     language: en
     url: https://pawelpudlo.com/itb
   event: ITB Berlin 2011
+  streaming:
+    - platform: Spotify
+      handle: 0R6WIXQovLYz9bRtXqgxea
+    - platform: Amazon Music
+      handle: B0CCDZVQ9Y
+    - platform: YouTube Music
+      handle: OLAK5uy_kcQ4XZXUaBMs5RmhfJzWIy3cYKy5wU330
+    - platform: Tidal
+      handle: 305939289
+    - platform: Deezer
+      handle: 466733355

@@ -30,6 +30,17 @@
     en: director of photography
     pl: operator filmowy
     de: Kameramann
+  streaming:
+    - platform: Spotify
+      handle: 0KrSqWHYqU4l2atAYy9XEb
+    - platform: Amazon Music
+      handle: B0CC8FXNSV
+    - platform: YouTube Music
+      handle: OLAK5uy_mP_UX_et7Bt2Crt_Uyv6y89vTLy7L08TU
+    - platform: Tidal
+      handle: 305606933
+    - platform: Deezer
+      handle: 466089025
 
 - id: calling-of-memories
   year: 2018
@@ -39,6 +50,18 @@
   streaming:
     - platform: YouTube
       handle: kwAHyiicCyc
+    - platform: Spotify
+      handle: 1YMsjW2XNq63qWHg9t6I5o
+    - platform: Apple Music
+      handle: calling-of-memories-single/1698269568
+    - platform: Amazon Music
+      handle: B0CC8NT878
+    - platform: YouTube Music
+      handle: OLAK5uy_lBxUk3TFNuSyCgyOikIsaIHa3YQbw9R4A
+    - platform: Tidal
+      handle: 305618410
+    - platform: Deezer
+      handle: 466131535
 
 - id: war-horns
   year: 2017
@@ -52,6 +75,19 @@
     en: (co-mix)
     pl: (współmiks)
     de: (Ko-Mischung)
+  streaming:
+    - platform: Spotify
+      handle: 4RW6E0yctAqmu95uAgLC1G
+    - platform: Apple Music
+      handle: war-horns/1698514089
+    - platform: Amazon Music
+      handle: B0CCF1C1FD
+    - platform: YouTube Music
+      handle: OLAK5uy_k2jBTVD1GnnMHU4tbMCjpD2NtjWE6Q92k
+    - platform: Tidal
+      handle: 305870848
+    - platform: Deezer
+      handle: 466733335
 
 - id: violemi
   year: 2010
@@ -65,6 +101,19 @@
     en: album co-production, recording
     pl: nagrania, koprodukcja albumu
     de: Album-Koproduktion, Aufnahme
+  streaming:
+    - platform: Spotify
+      handle: 4Du631KeAxTJwTiuWAv3ZI
+    - platform: Apple Music
+      handle: violemi/1698258921
+    - platform: Amazon Music
+      handle: B0CC81VTC3
+    - platform: YouTube Music
+      handle: OLAK5uy_kGJoqpeDhoBfkOIzSGpgm11YA36r5dkHA
+    - platform: Tidal
+      handle: 305601467
+    - platform: Deezer
+      handle: 466076085
 
 - id: when-titans-collide
   year: 2007

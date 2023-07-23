@@ -17,6 +17,8 @@
       handle: 35iyYjzK1JXdaLPWMtkadh
     - platform: Amazon Music
       handle: B0C7XMNLFV
+    - platform: YouTube Music
+      handle: OLAK5uy_kPKPmOrw8-aVduwcdrh3U7z6tuPz2lzkI
     - platform: Tidal
       handle: 299704147
     - platform: Deezer
