@@ -20,6 +20,19 @@
     de: |
       * Musikalbum-Koproduktion,
       * [Musikvideo](https://www.youtube.com/watch?v=lvCzspBNB2o)-Koproduktion
+  streaming:
+    - platform: Spotify
+      handle: 7tVhszO7FtgcYcroqumMme
+    - platform: Apple Music
+      handle: elements/1699683523
+    - platform: Amazon Music
+      handle: B0CD1JZWML
+    - platform: YouTube Music
+      handle: OLAK5uy_m8QYYCeQ45sFK3lKjs3losx1I903LVr8g
+    - platform: Tidal
+      handle: 307575864
+    - platform: Deezer
+      handle: 469614595
 
 - id: missa-brevis
   year: 2019
@@ -33,6 +46,8 @@
   streaming:
     - platform: Spotify
       handle: 0KrSqWHYqU4l2atAYy9XEb
+    - platform: Apple Music
+      handle: missa-brevis/1702932769
     - platform: Amazon Music
       handle: B0CC8FXNSV
     - platform: YouTube Music
@@ -48,8 +63,6 @@
     - language: en
       label: Calling of Memories
   streaming:
-    - platform: YouTube
-      handle: kwAHyiicCyc
     - platform: Spotify
       handle: 1YMsjW2XNq63qWHg9t6I5o
     - platform: Apple Music
@@ -127,6 +140,8 @@
   streaming:
     - platform: Spotify
       handle: 2t73oXcRIHZ2B8ok9COKee
+    - platform: Apple Music
+      handle: when-titans-collide/1699711489
     - platform: Amazon Music
       handle: B0C7YVCG26
     - platform: YouTube Music

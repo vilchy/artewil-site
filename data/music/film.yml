@@ -11,10 +11,10 @@
       label: Wiolonczelista
   director: '[Marek Cichy](https://vimeo.com/marekcichy "|lang:pl")'
   streaming:
-    - platform: YouTube
-      handle: 1X213QrAYfw
     - platform: Spotify
       handle: 35iyYjzK1JXdaLPWMtkadh
+    - platform: Apple Music
+      handle: cellist-original-soundtrack/1702947665
     - platform: Amazon Music
       handle: B0C7XMNLFV
     - platform: YouTube Music
@@ -23,6 +23,8 @@
       handle: 299704147
     - platform: Deezer
       handle: 452996855
+    - platform: YouTube
+      handle: 1X213QrAYfw
 
 - id: go
   year: 2007

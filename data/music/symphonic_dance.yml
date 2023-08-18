@@ -21,8 +21,6 @@
       UEFA Euro 2012\
       (Zeremonien vor dem Spiel)
   streaming:
-    - platform: YouTube
-      handle: LF1h-KFjIR4
     - platform: Spotify
       handle: 7oLkYjVKHXT4cem4kJ1way
     - platform: Apple Music
@@ -51,6 +49,8 @@
   streaming:
     - platform: Spotify
       handle: 0R6WIXQovLYz9bRtXqgxea
+    - platform: Apple Music
+      handle: seasons-of-poland/1702933339
     - platform: Amazon Music
       handle: B0CCDZVQ9Y
     - platform: YouTube Music
