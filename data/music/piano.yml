@@ -14,6 +14,8 @@
       handle: track/nonduno
     - platform: SoundCloud
       handle: rotepian/nonduno
+    - platform: YouTube
+      handle: u5mM_uz2yrY
 
 - id: november-snow
   year: 2008

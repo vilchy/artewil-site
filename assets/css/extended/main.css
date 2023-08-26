@@ -76,7 +76,11 @@ button#theme-toggle:focus {
 
 .post-content h2 {
     margin: 24px auto 16px;
-    font-size: 23px;
+    font-size: 26px;
+}
+
+.post-content h3 {
+    font-size: 19px;
 }
 
 .music td.title,

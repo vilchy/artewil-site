@@ -7,6 +7,10 @@ Files: static/*.png
 Copyright: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
 License: LicenseRef-ArteWil
 
+Files: static/music/nonduno/*
+Copyright: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+License: CC-BY-SA-4.0
+
 Files: layouts/partials/icons/*
 Copyright: The Simple Icons contributors
 License: CC0-1.0
