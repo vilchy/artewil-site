@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC0-1.0
 #
 # Copied and adapted from:
-# https://github.com/github/gitignore/
+# https://github.com/github/gitignore/blob/main/community/Golang/Hugo.gitignore
 
 # Generated files by hugo
 /public/

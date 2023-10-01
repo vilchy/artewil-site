@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
 */
 // Copied and adapted from:
-// https://github.com/angular-translate/angular-translate/
+// https://github.com/angular-translate/angular-translate/blob/master/src/service/translate.js
 
 // tries to determine the browsers language
 var getFirstBrowserLanguage = function () {
