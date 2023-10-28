@@ -6,6 +6,7 @@ title: "Musik"
 type: "music"
 slug: "musik"
 description: "Eine Auswahl von Musikmischungen und Notensatz von ArteWil."
+hideMeta: true
 ---
 
 ## Notensatz

@@ -1,0 +1,73 @@
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+table:
+  y_units: ["μs", "μs", "μs", "μs", "μs", "μs", "μs", "μs", "ms", "ms", "ms", "ms", "ms", "ms", "ms", "ms"]
+  y_scale_exponent: [0, 0, 0, 0, 0, 0, 0, 0, -3, -3, -3, -3, -3, -3, -3, -3]
+x:
+  label:
+    en: signal length [samples]
+    pl: długość sygnału [próbki]
+    de: Signallänge [Abtastwerte]
+  unit:
+    en:
+      one: sample
+      other: samples
+    pl:
+      one: próbka
+      few: próbki
+      many: próbek
+    de:
+      one: Abtastwert
+      other: Abtastwerte
+  values: [2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864]
+"y":
+  label:
+    en: time [μs]
+    pl: czas [μs]
+    de: Zeit [μs]
+  datasets:
+    - label:
+        en: Futhark sequential
+        pl: Futhark szeregowy
+        de: Futhark sequentiell
+      values: [2.0, 4.0, 8.0, 17, 33, 66, 132, 270, 548, 1097, 2321, 5302, 11530, 23482, 47143, 94590]
+      point_style: circle
+    - label:
+        en: Futhark multithreaded
+        pl: Futhark wielowątkowy
+        de: Futhark multithreaded
+      values: [9.4, 16, 18, 31, 73, 102, 110, 205, 404, 796, 2147, 5188, 10625, 20840, 41964, 84151]
+      point_style: rect
+    - label:
+        en: Futhark OpenCL
+        pl: Futhark OpenCL
+        de: Futhark OpenCL
+      values: [29, 29, 29, 31, 35, 40, 49, 71, 110, 193, 559, 1101, 2061, 3943, 8011, 15504]
+      point_style: triangle
+    - label:
+        en: Julia sequential
+        pl: Julia szeregowy
+        de: Julia sequentiell
+      values: [2.3, 4.4, 9.2, 17, 33, 67, 139, 280, 545, 1123, 2177, 4408, 8660, 41247, 82500, 165293]
+      point_style: circle
+    - label:
+        en: Julia multithreaded
+        pl: Julia wielowątkowy
+        de: Julia multithreaded
+      values: [12, 12, 13, 17, 25, 41, 83, 152, 269, 547, 1085, 2295, 6074, 11771, 23146, 44967]
+      point_style: rect
+    - label:
+        en: Mojo sequential
+        pl: Mojo szeregowy
+        de: Mojo sequentiell
+      values: [1.7, 3.4, 6.8, 14, 27, 54, 109, 218, 436, 877, 1900, 10313, 20718, 41720, 83576, 166969]
+      point_style: circle
+    - label:
+        en: Mojo multithreaded
+        pl: Mojo wielowątkowy
+        de: Mojo multithreaded
+      values: [4.2, 4.4, 6.4, 8.6, 14, 24, 44, 88, 170, 338, 707, 3242, 6550, 12931, 25891, 49739]
+      point_style: rect
+  unit: μs

@@ -5,6 +5,7 @@
 title: "Music"
 type: "music"
 description: "A selection of music mixed and engraved by ArteWil."
+hideMeta: true
 ---
 
 ## Music engraving

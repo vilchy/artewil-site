@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title:
+  en: Compressed size (LZMA)
+  pl: Rozmiar po skompresowaniu (LZMA)
+  de: Komprimierte Größe (LZMA)
+x:
+  label:
+    en: implementation
+    pl: implementacja
+    de: Implementierung
+  values: ["Futhark", "Julia", "Mojo"]
+"y":
+  label:
+    en: compressed size [B]
+    pl: rozmiar po skompresowaniu [B]
+    de: komprimierte Größe [B]
+  datasets:
+    - label:
+        en: Sequential algorithm
+        pl: Algorytm szeregowy
+        de: Sequentieller Algorithmus
+      values: [395, 367, 417]
+    - label:
+        en: Parallel algorithm
+        pl: Algorytm równoległy
+        de: Paralleler Algorithmus
+      values: [246, 333, 537]

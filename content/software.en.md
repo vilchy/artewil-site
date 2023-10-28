@@ -35,3 +35,17 @@ A simple package for sound analysis. (Work in progress…)
 
 * Language:
 [Python](https://www.python.org/).
+
+## Moving-sum-of-squares-*
+
+Several implementations of the moving sum of squares.
+
+* Repositories:
+  * [codeberg.org/vilchy/moving-sum-of-squares-fut](https://codeberg.org/vilchy/moving-sum-of-squares-fut)
+    ([Futhark](https://futhark-lang.org/)),
+  * [codeberg.org/vilchy/MovingSumOfSquares.jl](https://codeberg.org/vilchy/MovingSumOfSquares.jl)
+    ([Julia](https://julialang.org/)),
+  * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo)
+    ([Mojo](https://www.modular.com/mojo)),
+* License: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/),
+* [Benchmarks results](../moving_sum_of_squares-benchmark_results).

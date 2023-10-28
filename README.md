@@ -16,7 +16,7 @@ The site is built with [Hugo](https://gohugo.io/) and uses the
 The content of the site itself is copyrighted by Artur Wilniewczyc.
 The underlying source code used to format and display that content is mostly
 licensed under the [MIT license](LICENSES/MIT.txt).
-All documentation is licensed under
+All documentation and benchmark results are licensed under
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 The [Simple Icons](https://simpleicons.org/) icon set is licensed under

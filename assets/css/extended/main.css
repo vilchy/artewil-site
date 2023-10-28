@@ -40,6 +40,10 @@ body {
     filter: drop-shadow(0 0 3px rgba(200, 200, 255, 0.7));
 }
 
+.dark canvas {
+    filter: invert(1) hue-rotate(180deg);
+}
+
 .logo-switches  {
     margin-left: 8px;
 }
@@ -140,4 +144,58 @@ button#theme-toggle:focus {
     margin-top: 3px;
     height: 22px;
     width: 22px;
+}
+
+canvas.chart {
+    margin-bottom: 1em;
+}
+
+table.benchmark th,
+table.benchmark td {
+    text-align: right;
+}
+
+table.benchmark td.best {
+    background-color: #B0EAB0;
+}
+
+.dark table.benchmark td.best {
+    background-color: #103A10;
+}
+
+table.benchmark td.worst {
+    background-color: #FBB;
+}
+
+.dark table.benchmark td.worst {
+    background-color: #471010;
+}
+
+.cc-footer {
+    color: var(--secondary);
+    font-size: 14px;
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cc-footer .title {
+    font-style: italic;
+}
+
+.cc-footer a {
+    color: inherit;
+}
+
+.cc-footer a span.text {
+    border-bottom: 1px solid var(--secondary);
+}
+
+.cc-footer a:hover {
+    color: var(--primary);
+}
+
+.cc-footer .icons {
+    font-size: 22px;
+    vertical-align: middle;
 }

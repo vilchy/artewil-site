@@ -6,6 +6,7 @@ title: "Muzyka"
 type: "music"
 slug: "muzyka"
 description: "Przykłady miksów oraz nut wykonanych przez ArteWil."
+hideMeta: true
 ---
 
 ## Skład nut

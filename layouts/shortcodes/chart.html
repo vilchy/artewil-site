@@ -1,0 +1,22 @@
+<!--
+SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+
+SPDX-License-Identifier: MIT
+-->
+
+{{- $data_id := .Get "data_id" -}}
+{{- $canvas_id := printf "chart-%s" $data_id | anchorize -}}
+{{- $data := index site.Data (split $data_id "/") -}}
+<canvas id="{{ $canvas_id }}" class="chart"></canvas>
+<script>
+  (async function () {
+    initChart(
+      {{ $data | jsonify }},
+      '{{ $canvas_id }}',
+      '{{ .Get "type" }}',
+      '{{ site.Language.Lang }}',
+      '{{ .Get "xscale" }}',
+      '{{ .Get "yscale" }}',
+      );
+  })();
+</script>

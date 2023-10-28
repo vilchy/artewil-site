@@ -61,7 +61,6 @@ params:
   keywords: [Portfolio]
   author: Artur Wilniewczyc
   images: ["/logo.png"]
-  DateFormat: "January 2, 2006"
 
   assets:
     disableFingerprinting: false

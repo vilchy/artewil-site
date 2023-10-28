@@ -1,0 +1,72 @@
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+table:
+  y_units: ["ms"]
+x:
+  label:
+    en: window length [samples]
+    pl: długość okna [próbki]
+    de: Fensterlänge [Abtastwerte]
+  unit:
+    en:
+      one: sample
+      other: samples
+    pl:
+      one: próbka
+      few: próbki
+      many: próbek
+    de:
+      one: Abtastwert
+      other: Abtastwerte
+  values: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+"y":
+  label:
+    en: time [ms]
+    pl: czas [ms]
+    de: Zeit [ms]
+  datasets:
+    - label:
+        en: Futhark sequential
+        pl: Futhark szeregowy
+        de: Futhark sequentiell
+      values: [70, 70, 70, 71, 70, 70, 70, 70, 70, 71, 71, 71]
+      point_style: circle
+    - label:
+        en: Futhark multithreaded
+        pl: Futhark wielowątkowy
+        de: Futhark multithreaded
+      values: [54, 56, 58, 59, 60, 62, 102, 197, 430, 873, 1734, 3451]
+      point_style: rect
+    - label:
+        en: Futhark OpenCL
+        pl: Futhark OpenCL
+        de: Futhark OpenCL
+      values: [7.9, 7.9, 7.5, 8.0, 8.7, 12, 18, 30, 55, 104, 202, 398]
+      point_style: triangle
+    - label:
+        en: Julia sequential
+        pl: Julia szeregowy
+        de: Julia sequentiell
+      values: [123, 122, 122, 122, 122, 123, 123, 122, 126, 126, 121, 121]
+      point_style: circle
+    - label:
+        en: Julia multithreaded
+        pl: Julia wielowątkowy
+        de: Julia multithreaded
+      values: [29, 30, 30, 33, 32, 34, 41, 54, 79, 159, 243, 542]
+      point_style: rect
+    - label:
+        en: Mojo sequential
+        pl: Mojo szeregowy
+        de: Mojo sequentiell
+      values: [125, 124, 123, 124, 124, 124, 124, 123, 127, 127, 124, 125]
+      point_style: circle
+    - label:
+        en: Mojo multithreaded
+        pl: Mojo wielowątkowy
+        de: Mojo multithreaded
+      values: [35, 40, 38, 37, 38, 40, 46, 57, 90, 162, 306, 652]
+      point_style: rect
+  unit: ms

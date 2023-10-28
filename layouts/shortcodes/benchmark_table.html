@@ -1,0 +1,66 @@
+<!--
+SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+
+SPDX-License-Identifier: MIT
+-->
+
+{{- $data_id := .Get "data_id" -}}
+{{- $table_id := printf "table-%s" $data_id | anchorize -}}
+{{- $data := index site.Data (split $data_id "/") -}}
+{{- $columns := split (.Get "columns") "," -}}
+<table class="benchmark">
+  <thead>
+    <tr>
+      <th scope="col">
+        {{- partial "get_for_current_language" $data.x.label  | strings.FirstUpper -}}
+      </th>
+      {{ range $dataset := $data.y.datasets -}}
+        <th scope="col">
+          {{- partial "get_for_current_language" $dataset.label -}}
+          {{- if eq (len $data.table.y_units) 1 }} [{{ index $data.table.y_units 0 }}]{{ end -}}
+        </th>
+      {{ end -}}
+    </tr>
+  </thead>
+  <tbody>
+    {{- range $i, $x := $data.x.values }}
+    <tr id="{{ $table_id }}-row-{{ $x }}">
+      <th>
+        {{- $x | lang.FormatNumber 0 -}}
+      </th>
+      {{- $min_val := float (index (index $data.y.datasets 0).values $i) -}}
+      {{- $max_val := $min_val -}}
+
+      {{- range $dataset := $data.y.datasets -}}
+        {{- $val := index $dataset.values $i -}}
+        {{- if lt $val $min_val -}}
+          {{- $min_val = float $val -}}
+        {{- else if gt $val $max_val -}}
+          {{- $max_val = float $val -}}
+        {{- end -}}
+      {{- end -}}
+
+      {{- range $dataset := $data.y.datasets -}}
+        {{- $y := index $dataset.values $i -}}
+        {{- $is_best := lt (div (sub $y $min_val) $y) 0.03 -}}
+        {{- $is_worst := lt (div (sub $max_val $y) $y) 0.03 }}
+        <td {{- if $is_best }} class="best" {{- else if $is_worst }} class="worst" {{- end }}>
+          {{- if isset $data.table "y_scale_exponent" -}}
+            {{- $scale := index $data.table.y_scale_exponent $i -}}
+            {{- $y = mul $y (math.Pow 10 $scale) -}}
+          {{- end -}}
+
+          {{- $precision := sub 1 (math.Floor (div (math.Log $y) (math.Log 10))) -}}
+          {{- $resolution := math.Pow 10 $precision }}
+          {{- $y_rounded := div (math.Round (mul $y $resolution)) $resolution -}}
+          {{- $y_rounded | lang.FormatNumber (math.Max 0 $precision) -}}
+
+          {{- if gt (len $data.table.y_units) 1 -}}
+            &nbsp;{{- index $data.table.y_units $i -}}
+          {{- end -}}
+        </td>
+      {{- end }}
+    </tr>
+    {{- end }}
+  </tbody>
+</table>

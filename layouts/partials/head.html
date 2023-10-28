@@ -79,6 +79,19 @@ https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/partials/head
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
 
+{{- /* Chart.js */}}
+{{- if .Param "chartJS" -}}
+    <script src=" https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js "></script>
+    {{- $hugo_chart := resources.Get "js/hugochart.js" | minify }}
+    <script>{{ $hugo_chart.Content | safeJS }}</script>
+{{ end -}}
+
+{{- /* MathJax */}}
+{{- if .Param "mathJax" -}}
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+{{ end -}}
+
 <noscript>
     <style>
         #theme-toggle,

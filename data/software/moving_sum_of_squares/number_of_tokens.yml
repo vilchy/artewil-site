@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title:
+  en: Number of non-whitespace tokens
+  pl: Liczba tokenów bez białych znaków
+  de: Anzahl der Token ohne Leerzeichen
+x:
+  label:
+    en: implementation
+    pl: implementacja
+    de: Implementierung
+  values: ["Futhark", "Julia", "Mojo"]
+"y":
+  label:
+    en: number of tokens
+    pl: liczba tokenów
+    de: Anzahl der Token
+  datasets:
+    - label:
+        en: Sequential algorithm
+        pl: Algorytm szeregowy
+        de: Sequentieller Algorithmus
+      values: [239, 160, 243]
+    - label:
+        en: Parallel algorithm
+        pl: Algorytm równoległy
+        de: Paralleler Algorithmus
+      values: [103, 120, 266]
