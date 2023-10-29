@@ -195,9 +195,15 @@ table.benchmark td.worst {
     color: var(--primary);
 }
 
-.cc-footer .icons {
-    font-size: 22px;
-    vertical-align: middle;
+.cc-footer .icons img {
+    display: inline;
+    height: 19px;
+    margin-left: 3px;
+    vertical-align: text-bottom;
+}
+
+.dark .cc-footer .icons img {
+    filter: invert(1) hue-rotate(180deg);
 }
 
 @media only screen {

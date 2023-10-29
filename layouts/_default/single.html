@@ -49,8 +49,12 @@ https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/_default/sing
         <a href="http://creativecommons.org/licenses/by-sa/4.0/deed.{{ site.Language.Lang }}"
            target="_blank"
            rel="license noopener noreferrer">
-          <span class="text">{{ T "CCBYSA" }}</span>
-          <span class="icons">&#x1F16D; &#x1F16F; &#x1F10E;</span>
+          <span class="text">{{ T "CCBYSA" }}</span>{{- /**/ -}}
+          <span class="icons">
+          {{- range slice "cc" "by" "sa" -}}
+            <img src="https://mirrors.creativecommons.org/presskit/icons/{{ . }}.svg">
+          {{- end -}}
+          </span>
         </a>
       </p>
   </footer>
