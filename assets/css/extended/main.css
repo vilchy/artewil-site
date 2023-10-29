@@ -199,3 +199,25 @@ table.benchmark td.worst {
     font-size: 22px;
     vertical-align: middle;
 }
+
+@media only screen {
+    .post-content a {
+        box-shadow: none;
+    }
+
+    .post-content a .text {
+        box-shadow: 0 1px;
+    }
+
+    .post-content a .icon-external {
+        margin-left: 0.1em;
+        height: 12px;
+        width: 12px;
+    }
+}
+
+@media not screen {
+    .post-content a .icon-external {
+        display: none;
+    }
+}

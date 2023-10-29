@@ -24,4 +24,10 @@ https://github.com/gohugoio/hugo/blob/master/docs/content/en/templates/render-ho
       {{- end -}}
     {{- end -}}
   {{- end -}}
->{{ .Text | safeHTML }}</a>
+><span class="text">{{ .Text | safeHTML }}</span>
+ {{- if (findRE "://" .Destination) -}}
+  <svg class="icon-external" aria-hidden="true">
+    <use xlink:href="#icon-external-link"></use>
+  </svg>
+ {{- end -}}
+</a>

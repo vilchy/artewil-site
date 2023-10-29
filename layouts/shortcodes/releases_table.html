@@ -31,14 +31,19 @@ SPDX-License-Identifier: MIT
                 {{- end -}}>
               {{- end -}}
 
-                <cite>{{- partial "get_for_current_language" .title -}}</cite>
+                <cite class="text">{{- partial "get_for_current_language" .title -}}</cite>
 
                 {{- if .secondary_title -}}
                   <br>
-                  (<cite>{{- partial "get_for_current_language" .secondary_title -}}</cite>)
+                  (<cite class="text">{{- partial "get_for_current_language" .secondary_title -}}</cite>)
                 {{- end -}}
 
               {{- if .link -}}
+                {{- if (findRE "://" .link.url) -}}
+                  <svg class="icon-external" aria-hidden="true">
+                    <use xlink:href="#icon-external-link"></use>
+                  </svg>
+                {{- end -}}
               </a>
               {{- end -}}
 
