@@ -6,6 +6,8 @@ title: "Oprogramowanie"
 type: "software"
 slug: "oprogramowanie"
 description: "Wolne oprogramowanie rozwijane przez ArteWil."
+date: 2023-07-16
+lastmod: 2023-10-28
 hideMeta: true
 ---
 

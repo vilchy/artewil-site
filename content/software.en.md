@@ -5,6 +5,8 @@
 title: "Software"
 type: "software"
 description: "Free software developed by ArteWil."
+date: 2023-07-16
+lastmod: 2023-10-28
 hideMeta: true
 ---
 

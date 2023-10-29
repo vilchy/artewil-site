@@ -5,6 +5,8 @@
 title: "Music"
 type: "music"
 description: "A selection of music mixed and engraved by ArteWil."
+date: 2023-01-20
+lastmod: 2023-08-26
 hideMeta: true
 ---
 

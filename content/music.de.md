@@ -6,6 +6,8 @@ title: "Musik"
 type: "music"
 slug: "musik"
 description: "Eine Auswahl von Musikmischungen und Notensatz von ArteWil."
+date: 2023-01-20
+lastmod: 2023-08-26
 hideMeta: true
 ---
 
