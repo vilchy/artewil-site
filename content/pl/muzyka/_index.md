@@ -4,7 +4,7 @@
 
 title: "Muzyka"
 type: "music"
-slug: "muzyka"
+translationKey: music
 description: "Przykłady miksów oraz nut wykonanych przez ArteWil."
 date: 2023-01-20
 lastmod: 2023-08-26
@@ -16,14 +16,14 @@ hideMeta: true
 _Nonduno_. Nuty na fortepian, elektryczne pianino i gitarę basową.
 
 * [Źródła w formacie LilyPond](https://codeberg.org/vilchy/nonduno-score "|hreflang:en").
-* [Nuty w formacie MuseScore](/music/nonduno/rotepian-nonduno.mscz "|hreflang:en").
+* [Nuty w formacie MuseScore](/en/music/nonduno/rotepian-nonduno.mscz "|hreflang:en").
 * [Wideo z partyturą na YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
 * Pliki PDF (A4):
-  * [partytura](/music/nonduno/rotepian-nonduno-partytura.pdf),
+  * [partytura](nonduno/rotepian-nonduno-partytura.pdf),
   * partie:
-    * [fortepian](/music/nonduno/rotepian-nonduno-partia_fortepianu.pdf),
-    * [elektryczne pianino](/music/nonduno/rotepian-nonduno-partia_elektrycznego_pianina.pdf),
-    * [gitara basowa](/music/nonduno/rotepian-nonduno-partia_gitary_basowej.pdf).
+    * [fortepian](nonduno/rotepian-nonduno-partia_fortepianu.pdf),
+    * [elektryczne pianino](nonduno/rotepian-nonduno-partia_elektrycznego_pianina.pdf),
+    * [gitara basowa](nonduno/rotepian-nonduno-partia_gitary_basowej.pdf).
 
 Powyższe nuty są dostępne na [licencji Creative Commons Uznanie autorstwa-Na tych samych warunkach 4.0 Międzynarodowe](https://creativecommons.org/licenses/by-sa/4.0/deed.pl).
 

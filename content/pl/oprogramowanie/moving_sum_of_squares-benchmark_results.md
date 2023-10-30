@@ -5,7 +5,8 @@
 title: "Wyniki benchmarków sumy kroczącej kwadratów"
 type: "software"
 description: "Wyniki benchmarków kilku implementacji sumy kroczącej kwadratów."
-slug: suma_kroczaca_kwadratow-wyniki_benchmarkow
+url: oprogramowanie/suma_kroczaca_kwadratow-wyniki_benchmarkow
+translationKey: software_moving_sum_of_squares_benchmark_results
 date: 2023-10-28
 chartJS: true
 mathJax: true

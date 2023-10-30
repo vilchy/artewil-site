@@ -50,4 +50,4 @@ Verschiedene Implementierungen der gleitenden Quadratsumme.
   * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo "|hreflang:en|lang:en")
     ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")),
 * Lizenz: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/ "|hreflang:en|lang:en"),
-* [Benchmark-Ergebnisse](../gleitende_quadratsumme-benchmark-ergebnisse).
+* [Benchmark-Ergebnisse](gleitende_quadratsumme-benchmark-ergebnisse).

@@ -20,6 +20,7 @@ minify:
 defaultContentLanguageInSubdir: true
 languages:
   en:
+    contentDir: content/en
     languageName: English
     weight: 1
     menu:
@@ -30,6 +31,7 @@ languages:
         - name: Music
           url: music/
   pl:
+    contentDir: content/pl
     languageName: Polski
     weight: 2
     menu:
@@ -40,6 +42,7 @@ languages:
         - name: Muzyka
           url: muzyka/
   de:
+    contentDir: content/de
     languageName: Deutsch
     weight: 3
     menu:
@@ -61,6 +64,7 @@ params:
   keywords: [Portfolio]
   author: Artur Wilniewczyc
   images: ["/logo.png"]
+  showBreadCrumbs: true
 
   assets:
     disableFingerprinting: false

@@ -4,6 +4,7 @@
 
 title: "Benchmark results for the moving sum of squares"
 type: "software"
+translationKey: software_moving_sum_of_squares_benchmark_results
 description: "Benchmark results for several implementations of the moving sum of squares."
 date: 2023-10-28
 chartJS: true

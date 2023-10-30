@@ -50,4 +50,4 @@ Several implementations of the moving sum of squares.
   * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo)
     ([Mojo](https://www.modular.com/mojo)),
 * License: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/),
-* [Benchmarks results](../moving_sum_of_squares-benchmark_results).
+* [Benchmarks results](moving_sum_of_squares-benchmark_results).

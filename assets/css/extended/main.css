@@ -12,6 +12,10 @@ body {
     line-height: 1.5;
 }
 
+.list {
+    background: var(--theme);
+}
+
 .hidden {
     display: none;
 }
@@ -65,16 +69,16 @@ button#theme-toggle:focus {
     margin: auto 6px;
 }
 
-.music .post-content table th,
-.music .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
+.music.post-content table th,
+.music.post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
     padding: 0.5em 0.75em;
 }
 
-.music .post-content table td ul {
+.music.post-content table td ul {
     margin-bottom: 0.5em;
 }
 
-.post-header {
+.page-header, .post-header {
     margin: 0 auto var(--content-gap) auto;
 }
 

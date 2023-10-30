@@ -4,7 +4,7 @@
 
 title: "Musik"
 type: "music"
-slug: "musik"
+translationKey: music
 description: "Eine Auswahl von Musikmischungen und Notensatz von ArteWil."
 date: 2023-01-20
 lastmod: 2023-08-26
@@ -16,14 +16,14 @@ hideMeta: true
 _Nonduno_. Noten für Klavier, E-Piano und Bassgitarre.
 
 * [Quellen im LilyPond-Format](https://codeberg.org/vilchy/nonduno-score "|hreflang:en").
-* [Noten im MuseScore-Format](/music/nonduno/rotepian-nonduno.mscz "|hreflang:en").
+* [Noten im MuseScore-Format](/en/music/nonduno/rotepian-nonduno.mscz "|hreflang:en").
 * [Partitur Video auf YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
 * PDF-Dateien (A4):
-  * [Partitur](/music/nonduno/rotepian-nonduno-partitur.pdf),
+  * [Partitur](nonduno/rotepian-nonduno-partitur.pdf),
   * Stimmen:
-    * [Klavier](/music/nonduno/rotepian-nonduno-klavierstimme.pdf),
-    * [E-Piano](/music/nonduno/rotepian-nonduno-epianostimme.pdf),
-    * [Bassgitarre](/music/nonduno/rotepian-nonduno-bassgitarrenstimme.pdf).
+    * [Klavier](nonduno/rotepian-nonduno-klavierstimme.pdf),
+    * [E-Piano](nonduno/rotepian-nonduno-epianostimme.pdf),
+    * [Bassgitarre](nonduno/rotepian-nonduno-bassgitarrenstimme.pdf).
 
 Die Noten sind lizenziert unter einer
 [Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz](https://creativecommons.org/licenses/by-sa/4.0/deed.de).

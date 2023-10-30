@@ -4,8 +4,9 @@
 
 title: "Benchmark-Ergebnisse für die gleitende Quadratsumme"
 type: "software"
-description: "Benchmark-Ergebnisse für verschiedene Implementierungen der gleitenden Quadratsumme."
+translationKey: software_moving_sum_of_squares_benchmark_results
 slug: gleitende_quadratsumme-benchmark-ergebnisse
+description: "Benchmark-Ergebnisse für verschiedene Implementierungen der gleitenden Quadratsumme."
 date: 2023-10-28
 chartJS: true
 mathJax: true

@@ -4,7 +4,7 @@
 
 title: "Oprogramowanie"
 type: "software"
-slug: "oprogramowanie"
+translationKey: software
 description: "Wolne oprogramowanie rozwijane przez ArteWil."
 date: 2023-07-16
 lastmod: 2023-10-28
@@ -51,4 +51,4 @@ Kilka implementacji sumy kroczącej kwadratów.
   * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo "|hreflang:en|lang:en")
     ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")),
 * Licencja: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/ "|hreflang:en|lang:en"),
-* [Wyniki benchmarków](../suma_kroczaca_kwadratow-wyniki_benchmarkow).
+* [Wyniki benchmarków](suma_kroczaca_kwadratow-wyniki_benchmarkow).
