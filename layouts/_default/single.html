@@ -45,7 +45,8 @@ https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/_default/sing
           <span class="text">{{ T "CCBYSA" }}</span>{{- /**/ -}}
           <span class="icons">
           {{- range slice "cc" "by" "sa" -}}
-            <img src="https://mirrors.creativecommons.org/presskit/icons/{{ . }}.svg">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/{{ . }}.svg"
+                 alt="{{ . | upper }}">
           {{- end -}}
           </span>
         </a>
