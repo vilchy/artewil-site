@@ -11,6 +11,7 @@ date: 2023-10-28
 chartJS: true
 mathJax: true
 CCLicense: true
+schematype: TechArticle
 ---
 
 Wyniki benchmarków kilku implementacji sumy kroczącej kwadratów (MSS):

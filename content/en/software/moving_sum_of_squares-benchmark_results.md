@@ -10,6 +10,7 @@ date: 2023-10-28
 chartJS: true
 mathJax: true
 CCLicense: true
+schematype: TechArticle
 ---
 
 Benchmark results for several implementations of the moving sum of squares (MSS):

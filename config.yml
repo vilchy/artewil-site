@@ -66,5 +66,9 @@ params:
   images: ["/logo.png"]
   showBreadCrumbs: true
 
+  schema:
+    sameas: ["https://www.linkedin.com/company/artewil"]
+    authorurl: https://musicbrainz.org/artist/522591b8-f53f-4fa2-a4ba-26416aa31a89
+
   assets:
     disableFingerprinting: false

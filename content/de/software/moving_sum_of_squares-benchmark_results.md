@@ -11,6 +11,7 @@ date: 2023-10-28
 chartJS: true
 mathJax: true
 CCLicense: true
+schematype: TechArticle
 ---
 
 Benchmark-Ergebnisse für verschiedene Implementierungen der gleitenden Quadratsumme (MSS):
