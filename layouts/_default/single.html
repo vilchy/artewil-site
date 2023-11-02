@@ -22,6 +22,8 @@ https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/_default/sing
     </div>
     {{- end }}
   </header>
+  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
 
   {{- if .Content }}
   <div class="post-content">

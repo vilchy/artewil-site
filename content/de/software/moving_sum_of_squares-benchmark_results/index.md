@@ -12,6 +12,9 @@ chartJS: true
 mathJax: true
 CCLicense: true
 schematype: TechArticle
+cover:
+  image: moving_sum_of_squares-code.jpg
+  relative: true
 ---
 
 Benchmark-Ergebnisse für verschiedene Implementierungen der gleitenden Quadratsumme (MSS):

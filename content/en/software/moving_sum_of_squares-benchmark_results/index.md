@@ -11,6 +11,9 @@ chartJS: true
 mathJax: true
 CCLicense: true
 schematype: TechArticle
+cover:
+  image: moving_sum_of_squares-code.jpg
+  relative: true
 ---
 
 Benchmark results for several implementations of the moving sum of squares (MSS):
