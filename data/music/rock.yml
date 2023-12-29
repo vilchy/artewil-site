@@ -7,10 +7,7 @@
   title:
     - language: en
       label: Show Must Go On!
-  link:
-    language: pl
-    url: https://www.requiem.wroclaw.pl/muzyka/mp3/show-must-go-on
-  music_by: '[Requiem](https://www.requiem.wroclaw.pl/ "|hreflang:pl") (PL)'
+  music_by: '[Requiem](https://www.youtube.com/@requuiem) (PL)'
   streaming:
     - platform: SoundCloud
       handle: requiem-wroclaw
