@@ -17,7 +17,9 @@ _Nonduno_. Nuty na fortepian, elektryczne pianino i gitarę basową.
 
 * [Źródła w formacie LilyPond](https://codeberg.org/vilchy/nonduno-score "|hreflang:en").
 * [Nuty w formacie MuseScore](/en/music/nonduno/rotepian-nonduno.mscz "|hreflang:en").
-* [Wideo z partyturą na YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
+* Wideo z partyturą na:
+  * [rankett.net](https://rankett.net/w/7W8tRvXMkT2A2YdzigrEJk "|hreflang:en"),
+  * [YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
 * Pliki PDF (A4):
   * [partytura](nonduno/rotepian-nonduno-partytura.pdf),
   * partie:
@@ -25,7 +27,7 @@ _Nonduno_. Nuty na fortepian, elektryczne pianino i gitarę basową.
     * [elektryczne pianino](nonduno/rotepian-nonduno-partia_elektrycznego_pianina.pdf),
     * [gitara basowa](nonduno/rotepian-nonduno-partia_gitary_basowej.pdf).
 
-Powyższe nuty są dostępne na [licencji Creative Commons Uznanie autorstwa-Na tych samych warunkach 4.0 Międzynarodowe](https://creativecommons.org/licenses/by-sa/4.0/deed.pl).
+Powyższy utwór jest dostępny na [licencji Creative Commons Uznanie autorstwa-Na tych samych warunkach 4.0 Międzynarodowe](https://creativecommons.org/licenses/by-sa/4.0/deed.pl).
 
 ## Miksowanie muzyki
 

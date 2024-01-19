@@ -17,7 +17,9 @@ _Nonduno_. Noten für Klavier, E-Piano und Bassgitarre.
 
 * [Quellen im LilyPond-Format](https://codeberg.org/vilchy/nonduno-score "|hreflang:en").
 * [Noten im MuseScore-Format](/en/music/nonduno/rotepian-nonduno.mscz "|hreflang:en").
-* [Partitur Video auf YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
+* Partitur Video auf:
+  * [rankett.net](https://rankett.net/w/7W8tRvXMkT2A2YdzigrEJk "|hreflang:en"),
+  * [YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
 * PDF-Dateien (A4):
   * [Partitur](nonduno/rotepian-nonduno-partitur.pdf),
   * Stimmen:
@@ -25,7 +27,7 @@ _Nonduno_. Noten für Klavier, E-Piano und Bassgitarre.
     * [E-Piano](nonduno/rotepian-nonduno-epianostimme.pdf),
     * [Bassgitarre](nonduno/rotepian-nonduno-bassgitarrenstimme.pdf).
 
-Die Noten sind lizenziert unter einer
+Dieses Werk ist lizenziert unter einer
 [Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz](https://creativecommons.org/licenses/by-sa/4.0/deed.de).
 
 ## Musikmischungen

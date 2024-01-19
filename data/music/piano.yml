@@ -14,6 +14,8 @@
       handle: track/nonduno
     - platform: SoundCloud
       handle: rotepian/nonduno
+    - platform: Rankett
+      handle: 7W8tRvXMkT2A2YdzigrEJk
     - platform: YouTube
       handle: u5mM_uz2yrY
 

@@ -20,6 +20,9 @@ https://{{ .artist -}}.bandcamp.com/{{ .handle -}}
 {{- else if (eq .platform "Deezer") -}}
 https://www.deezer.com/album/{{ .handle -}}
 
+{{- else if (eq .platform "Rankett") -}}
+https://rankett.net/w/{{ .handle -}}
+
 {{- else if (eq .platform "SoundCloud") -}}
 https://soundcloud.com/{{ .handle -}}
 

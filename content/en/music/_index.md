@@ -16,7 +16,9 @@ _Nonduno_. Sheet music for piano, electric piano and bass guitar.
 
 * [Sources in LilyPond format](https://codeberg.org/vilchy/nonduno-score).
 * [Score in MuseScore format](nonduno/rotepian-nonduno.mscz).
-* [Score video on YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
+* Score video on:
+  * [rankett.net](https://rankett.net/w/7W8tRvXMkT2A2YdzigrEJk),
+  * [YouTube](https://www.youtube.com/watch?v=u5mM_uz2yrY).
 * PDF files:
   * full score:
     [A4](nonduno/rotepian-nonduno-full_score-a4.pdf),
@@ -32,7 +34,7 @@ _Nonduno_. Sheet music for piano, electric piano and bass guitar.
       [A4](nonduno/rotepian-nonduno-bass_part-a4.pdf),
       [Letter](nonduno/rotepian-nonduno-bass_part-letter.pdf).
 
-The sheet music is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Audio mixing
 
