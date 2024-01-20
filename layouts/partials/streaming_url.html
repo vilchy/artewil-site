@@ -20,6 +20,9 @@ https://{{ .artist -}}.bandcamp.com/{{ .handle -}}
 {{- else if (eq .platform "Deezer") -}}
 https://www.deezer.com/album/{{ .handle -}}
 
+{{- else if (eq .platform "Internet Archive") -}}
+https://archive.org/details/{{ .handle -}}
+
 {{- else if (eq .platform "Rankett") -}}
 https://rankett.net/w/{{ .handle -}}
 
