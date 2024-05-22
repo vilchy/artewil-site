@@ -1,12 +1,12 @@
 ---
-# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
 # SPDX-License-Identifier: LicenseRef-ArteWil
 
 title: "Software"
 type: "software"
 description: "Freie Software entwickelt von ArteWil."
 date: 2023-07-16
-lastmod: 2023-10-28
+lastmod: 2024-05-22
 hideMeta: true
 ---
 
@@ -49,5 +49,7 @@ Verschiedene Implementierungen der gleitenden Quadratsumme.
     ([Julia](https://julialang.org/ "|hreflang:en|lang:en")),
   * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo "|hreflang:en|lang:en")
     ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")),
+  * [codeberg.org/vilchy/idris2-moving-sum](https://codeberg.org/vilchy/idris2-moving-sum "|hreflang:en|lang:en")
+    ([Idris](https://www.idris-lang.org/ "|hreflang:en|lang:en")),
 * Lizenz: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/ "|hreflang:en|lang:en"),
 * [Benchmark-Ergebnisse](gleitende_quadratsumme-benchmark-ergebnisse).

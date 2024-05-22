@@ -1,12 +1,12 @@
 ---
-# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
 # SPDX-License-Identifier: LicenseRef-ArteWil
 
 title: "Software"
 type: "software"
 description: "Free software developed by ArteWil."
 date: 2023-07-16
-lastmod: 2023-10-28
+lastmod: 2024-05-22
 hideMeta: true
 ---
 
@@ -49,5 +49,7 @@ Several implementations of the moving sum of squares.
     ([Julia](https://julialang.org/)),
   * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo)
     ([Mojo](https://www.modular.com/mojo)),
+  * [codeberg.org/vilchy/idris2-moving-sum](https://codeberg.org/vilchy/idris2-moving-sum)
+    ([Idris](https://www.idris-lang.org/)),
 * License: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/),
 * [Benchmarks results](moving_sum_of_squares-benchmark_results).
