@@ -61,12 +61,12 @@ x:
         en: Mojo sequential
         pl: Mojo szeregowy
         de: Mojo sequentiell
-      values: [125, 124, 123, 124, 124, 124, 124, 123, 127, 127, 124, 125]
+      values: [129, 129, 129, 129, 128, 129, 130, 130, 133, 133, 130, 130]
       point_style: circle
     - label:
         en: Mojo multithreaded
         pl: Mojo wielowątkowy
         de: Mojo multithreaded
-      values: [35, 40, 38, 37, 38, 40, 46, 57, 90, 162, 306, 652]
+      values: [34, 36, 39, 37, 41, 47, 62, 98, 170, 321, 611, 1192]
       point_style: rect
   unit: ms

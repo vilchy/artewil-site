@@ -42,8 +42,8 @@ SPDX-License-Identifier: MIT
 
       {{- range $dataset := $data.y.datasets -}}
         {{- $y := index $dataset.values $i -}}
-        {{- $is_best := lt (div (sub $y $min_val) $y) 0.03 -}}
-        {{- $is_worst := lt (div (sub $max_val $y) $y) 0.03 }}
+        {{- $is_best := lt (div (sub $y $min_val) $y) 0.06 -}}
+        {{- $is_worst := lt (div (sub $max_val $y) $y) 0.06 }}
         <td {{- if $is_best }} class="best" {{- else if $is_worst }} class="worst" {{- end }}>
           {{- if isset $data.table "y_scale_exponent" -}}
             {{- $scale := index $data.table.y_scale_exponent $i -}}

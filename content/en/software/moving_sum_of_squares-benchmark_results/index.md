@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 title: "Benchmark results for the moving sum of squares"
@@ -7,6 +7,7 @@ type: "software"
 translationKey: software_moving_sum_of_squares_benchmark_results
 description: "Benchmark results for several implementations of the moving sum of squares."
 date: 2023-10-28
+lastmod: 2024-06-01
 chartJS: true
 mathJax: true
 CCLicense: true
@@ -76,9 +77,9 @@ The source code:
 
 | Implementation | Number of non-whitespace tokens | Compressed size (LZMA) [B] |
 |--------------------|----:|----:|
-| Futhark sequential | 239 | 395 |
-| Futhark parallel   | 103 | 246 |
-| Julia sequential   | 160 | 367 |
-| Julia parallel     | 120 | 333 |
-| Mojo sequential    | 243 | 417 |
-| Mojo parallel      | 266 | 537 |
+| Futhark sequential | 283 | 439 |
+| Futhark parallel   | 109 | 266 |
+| Julia sequential   | 214 | 486 |
+| Julia parallel     | 132 | 409 |
+| Mojo sequential    | 371 | 585 |
+| Mojo parallel      | 249 | 540 |

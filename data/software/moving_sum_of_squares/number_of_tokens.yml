@@ -21,9 +21,9 @@ x:
         en: Sequential algorithm
         pl: Algorytm szeregowy
         de: Sequentieller Algorithmus
-      values: [239, 160, 243]
+      values: [283, 214, 371]
     - label:
         en: Parallel algorithm
         pl: Algorytm równoległy
         de: Paralleler Algorithmus
-      values: [103, 120, 266]
+      values: [109, 132, 249]

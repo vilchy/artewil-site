@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 title: "Benchmark-Ergebnisse für die gleitende Quadratsumme"
@@ -8,6 +8,7 @@ translationKey: software_moving_sum_of_squares_benchmark_results
 slug: gleitende_quadratsumme-benchmark-ergebnisse
 description: "Benchmark-Ergebnisse für verschiedene Implementierungen der gleitenden Quadratsumme."
 date: 2023-10-28
+lastmod: 2024-06-01
 chartJS: true
 mathJax: true
 CCLicense: true
@@ -77,9 +78,9 @@ Der Quellcode:
 
 | Implementierung | Anzahl der Token ohne Leerzeichen | Komprimierte Größe (LZMA) [B] |
 |---------------------|----:|----:|
-| Futhark sequentiell | 239 | 395 |
-| Futhark parallel    | 103 | 246 |
-| Julia sequentiell   | 160 | 367 |
-| Julia parallel      | 120 | 333 |
-| Mojo sequentiell    | 243 | 417 |
-| Mojo parallel       | 266 | 537 |
+| Futhark sequentiell | 283 | 439 |
+| Futhark parallel    | 109 | 266 |
+| Julia sequentiell   | 214 | 486 |
+| Julia parallel      | 132 | 409 |
+| Mojo sequentiell    | 371 | 585 |
+| Mojo parallel       | 249 | 540 |

@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 title: "Wyniki benchmarków sumy kroczącej kwadratów"
@@ -8,6 +8,7 @@ description: "Wyniki benchmarków kilku implementacji sumy kroczącej kwadratów
 slug: suma_kroczaca_kwadratow-wyniki_benchmarkow
 translationKey: software_moving_sum_of_squares_benchmark_results
 date: 2023-10-28
+lastmod: 2024-06-01
 chartJS: true
 mathJax: true
 CCLicense: true
@@ -77,9 +78,9 @@ Kod źródłowy:
 
 | Implementacja | Liczba tokenów bez białych znaków | Rozmiar po skompresowaniu (LZMA) [B] |
 |--------------------|----:|----:|
-| Futhark szeregowy  | 239 | 395 |
-| Futhark równoległy | 103 | 246 |
-| Julia szeregowy    | 160 | 367 |
-| Julia równoległy   | 120 | 333 |
-| Mojo szeregowy     | 243 | 417 |
-| Mojo równoległy    | 266 | 537 |
+| Futhark szeregowy  | 283 | 439 |
+| Futhark równoległy | 109 | 266 |
+| Julia szeregowy    | 214 | 486 |
+| Julia równoległy   | 132 | 409 |
+| Mojo szeregowy     | 371 | 585 |
+| Mojo równoległy    | 249 | 540 |
