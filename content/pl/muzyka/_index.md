@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <code@artewil.com>
 # SPDX-License-Identifier: LicenseRef-ArteWil
 
 title: "Muzyka"

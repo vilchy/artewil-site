@@ -1,22 +1,22 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ArteWil site
-Upstream-Contact: Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+Upstream-Contact: Artur Wilniewczyc <code@artewil.com>
 Source: https://github.com/vilchy/artewil-site
 
 Files: static/*.png
-Copyright: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+Copyright: 2023 Artur Wilniewczyc <code@artewil.com>
 License: LicenseRef-ArteWil
 
 Files: static/en/music/nonduno/*
-Copyright: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+Copyright: 2023 Artur Wilniewczyc <code@artewil.com>
 License: CC-BY-SA-4.0
 
 Files: static/pl/muzyka/nonduno/*
-Copyright: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+Copyright: 2023 Artur Wilniewczyc <code@artewil.com>
 License: CC-BY-SA-4.0
 
 Files: static/de/musik/nonduno/*
-Copyright: 2023 Artur Wilniewczyc <artur.wilniewczyc@gmail.com>
+Copyright: 2023 Artur Wilniewczyc <code@artewil.com>
 License: CC-BY-SA-4.0
 
 Files: layouts/partials/icons/*
