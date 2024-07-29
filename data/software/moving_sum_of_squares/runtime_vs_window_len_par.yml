@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <code@artewil.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+table:
+  y_unit: "s"
+  y_scale_exponent: -3
+x:
+  label:
+    en: window length [samples]
+    pl: długość okna [próbki]
+    de: Fensterlänge [Abtastwerte]
+  unit:
+    en:
+      one: sample
+      other: samples
+    pl:
+      one: próbka
+      few: próbki
+      many: próbek
+    de:
+      one: Abtastwert
+      other: Abtastwerte
+  values: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+"y":
+  label:
+    en: time [ms]
+    pl: czas [ms]
+    de: Zeit [ms]
+  datasets:
+    - label: Futhark GPU
+      values: [7.9, 7.9, 7.5, 8.0, 8.7, 12, 18, 30, 55, 104, 202, 398]
+      point_style: rectRounded
+      point_color: "#FF0050"
+    - label: Julia CPU
+      values: [29, 30, 30, 33, 32, 34, 41, 54, 79, 159, 243, 542]
+      point_style: circle
+      point_color: "#4C75FF"
+    - label: Mojo CPU
+      values: [34, 36, 39, 37, 41, 47, 62, 98, 170, 321, 611, 1192]
+      point_style: triangle
+      point_color: "#F4900C"
+    - label: Futhark CPU
+      values: [54, 56, 58, 59, 60, 62, 102, 197, 430, 873, 1734, 3451]
+      point_style: rect
+      point_color: "#B30038"
+    - label: Elixir+XLA CPU
+      values: [35, 77, 79, 88, 110, 110, 160, 200, 340, 620, 1200, 2300]
+      point_style: rectRot
+      point_color: "#9C6BB3"
+  unit: ms

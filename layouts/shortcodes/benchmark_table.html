@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <code@artewil.com>
+SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <code@artewil.com>
 
 SPDX-License-Identifier: MIT
 -->
@@ -8,6 +8,8 @@ SPDX-License-Identifier: MIT
 {{- $table_id := printf "table-%s" $data_id | anchorize -}}
 {{- $data := index site.Data (split $data_id "/") -}}
 {{- $columns := split (.Get "columns") "," -}}
+{{- $unit_prefixes := slice "μ" "m" "" -}}
+{{- $unit_shift := add (div $data.table.y_scale_exponent 3) 2 -}}
 <table class="benchmark">
   <thead>
     <tr>
@@ -17,7 +19,6 @@ SPDX-License-Identifier: MIT
       {{ range $dataset := $data.y.datasets -}}
         <th scope="col">
           {{- partial "get_for_current_language" $dataset.label -}}
-          {{- if eq (len $data.table.y_units) 1 }} [{{ index $data.table.y_units 0 }}]{{ end -}}
         </th>
       {{ end -}}
     </tr>
@@ -33,32 +34,37 @@ SPDX-License-Identifier: MIT
 
       {{- range $dataset := $data.y.datasets -}}
         {{- $val := index $dataset.values $i -}}
-        {{- if lt $val $min_val -}}
-          {{- $min_val = float $val -}}
-        {{- else if gt $val $max_val -}}
-          {{- $max_val = float $val -}}
+        {{- if $val -}}
+          {{- if lt $val $min_val -}}
+            {{- $min_val = float $val -}}
+          {{- else if gt $val $max_val -}}
+            {{- $max_val = float $val -}}
+          {{- end -}}
         {{- end -}}
       {{- end -}}
 
       {{- range $dataset := $data.y.datasets -}}
         {{- $y := index $dataset.values $i -}}
-        {{- $is_best := lt (div (sub $y $min_val) $y) 0.06 -}}
-        {{- $is_worst := lt (div (sub $max_val $y) $y) 0.06 }}
-        <td {{- if $is_best }} class="best" {{- else if $is_worst }} class="worst" {{- end }}>
-          {{- if isset $data.table "y_scale_exponent" -}}
-            {{- $scale := index $data.table.y_scale_exponent $i -}}
-            {{- $y = mul $y (math.Pow 10 $scale) -}}
-          {{- end -}}
+        {{- if $y -}}
+          {{- $is_best := lt (div (sub $y $min_val) $y) 0.06 -}}
+          {{- $is_worst := lt (div (sub $max_val $y) $y) 0.06 }}
+          <td {{- if $is_best }} class="best" {{- else if $is_worst }} class="worst" {{- end }}>
+            {{- $log10y := div (math.Log $y) (math.Log 10) -}}
+            {{- $shift := math.Floor (div (add $log10y 1) 3) -}}
+            {{- $scale := mul $shift 3 -}}
+            {{- $y = div $y (math.Pow 10 $scale) -}}
 
-          {{- $precision := sub 1 (math.Floor (div (math.Log $y) (math.Log 10))) -}}
-          {{- $resolution := math.Pow 10 $precision }}
-          {{- $y_rounded := div (math.Round (mul $y $resolution)) $resolution -}}
-          {{- $y_rounded | lang.FormatNumber (math.Max 0 $precision) -}}
+            {{- $precision := sub 1 (math.Floor (sub $log10y $scale)) -}}
+            {{- $resolution := math.Pow 10 $precision }}
+            {{- $y_rounded := div (math.Round (mul $y $resolution)) $resolution -}}
+            {{- $y_rounded | lang.FormatNumber (math.Max 0 $precision) -}}
 
-          {{- if gt (len $data.table.y_units) 1 -}}
-            &nbsp;{{- index $data.table.y_units $i -}}
-          {{- end -}}
-        </td>
+            &nbsp;{{- index $unit_prefixes (add (int $shift) $unit_shift) -}}
+            {{- $data.table.y_unit -}}
+          </td>
+        {{- else -}}
+          <td class="not_available">-</td>
+        {{- end -}}
       {{- end }}
     </tr>
     {{- end }}

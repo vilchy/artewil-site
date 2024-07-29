@@ -7,7 +7,7 @@ type: "software"
 translationKey: software_moving_sum_of_squares_benchmark_results
 description: "Benchmark results for several implementations of the moving sum of squares."
 date: 2023-10-28
-lastmod: 2024-06-01
+lastmod: 2024-07-29
 chartJS: true
 mathJax: true
 CCLicense: true
@@ -44,24 +44,48 @@ The source code:
   ([Julia](https://julialang.org/)),
 * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo)
   ([Mojo](https://www.modular.com/mojo)),
+* [codeberg.org/vilchy/moving_sum_of_squares_nx](https://codeberg.org/vilchy/moving_sum_of_squares_nx)
+  ([Elixir](https://elixir-lang.org/)).
 
 ## Mean runtime vs. _signal length_ for _window length_ = 32 samples
 
-{{< chart data_id="software/moving_sum_of_squares/runtime_vs_signal_len"
+### Sequential
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_signal_len_seq"
           type="scatter"
           xscale="logarithmic"
           yscale="logarithmic" >}}
 
-{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_signal_len" >}}
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_signal_len_seq" >}}
+
+### Parallel
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_signal_len_par"
+          type="scatter"
+          xscale="logarithmic"
+          yscale="logarithmic" >}}
+
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_signal_len_par" >}}
 
 ## Mean runtime vs. _window length_ for _signal length_ = 50 × 10⁶ samples
 
-{{< chart data_id="software/moving_sum_of_squares/runtime_vs_window_len"
+### Sequential
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_window_len_seq"
           type="scatter"
           xscale="logarithmic"
           yscale="logarithmic" >}}
 
-{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_window_len" >}}
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_window_len_seq" >}}
+
+### Parallel
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_window_len_par"
+          type="scatter"
+          xscale="logarithmic"
+          yscale="logarithmic" >}}
+
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_window_len_par" >}}
 
 ## Conciseness of the source code
 
@@ -76,10 +100,12 @@ The source code:
           yscale="linear" >}}
 
 | Implementation | Number of non-whitespace tokens | Compressed size (LZMA) [B] |
-|--------------------|----:|----:|
-| Futhark sequential | 283 | 439 |
-| Futhark parallel   | 109 | 266 |
-| Julia sequential   | 214 | 486 |
-| Julia parallel     | 132 | 409 |
-| Mojo sequential    | 371 | 585 |
-| Mojo parallel      | 249 | 540 |
+|----------------------|----:|----:|
+| Futhark sequential   | 283 | 439 |
+| Futhark parallel     | 109 | 266 |
+| Julia sequential     | 214 | 486 |
+| Julia parallel       | 132 | 409 |
+| Mojo sequential      | 371 | 585 |
+| Mojo parallel        | 249 | 540 |
+| Elixir+Nx sequential | 431 | 713 |
+| Elixir+Nx parallel   | 145 | 424 |

@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <code@artewil.com>
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <code@artewil.com>
 #
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title:
@@ -10,7 +10,7 @@ x:
     en: implementation
     pl: implementacja
     de: Implementierung
-  values: ["Futhark", "Julia", "Mojo"]
+  values: ["Futhark", "Julia", "Mojo", "Elixir+Nx"]
 "y":
   label:
     en: compressed size [B]
@@ -21,9 +21,9 @@ x:
         en: Sequential algorithm
         pl: Algorytm szeregowy
         de: Sequentieller Algorithmus
-      values: [439, 486, 585]
+      values: [439, 486, 585, 713]
     - label:
         en: Parallel algorithm
         pl: Algorytm równoległy
         de: Paralleler Algorithmus
-      values: [266, 409, 540]
+      values: [266, 409, 540, 424]

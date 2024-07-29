@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <code@artewil.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+table:
+  y_unit: "s"
+  y_scale_exponent: -6
+x:
+  label:
+    en: signal length [samples]
+    pl: długość sygnału [próbki]
+    de: Signallänge [Abtastwerte]
+  unit:
+    en:
+      one: sample
+      other: samples
+    pl:
+      one: próbka
+      few: próbki
+      many: próbek
+    de:
+      one: Abtastwert
+      other: Abtastwerte
+  values: [2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864]
+"y":
+  label:
+    en: time [μs]
+    pl: czas [μs]
+    de: Zeit [μs]
+  datasets:
+    - label: Mojo
+      values: [1.7, 3.4, 6.8, 14, 27, 55, 109, 221, 456, 883, 1887, 10564, 21330, 43070, 86923, 173272]
+      point_style: triangle
+      point_color: "#F4900C"
+    - label: Futhark
+      values: [2.0, 4.0, 8.0, 17, 33, 66, 132, 270, 548, 1097, 2321, 5302, 11530, 23482, 47143, 94590]
+      point_style: rect
+      point_color: "#B30038"
+    - label: Julia
+      values: [2.3, 4.4, 9.2, 17, 33, 67, 139, 280, 545, 1123, 2177, 4408, 8660, 41247, 82500, 165293]
+      point_style: circle
+      point_color: "#4C75FF"
+    - label: Elixir+XLA
+      values: [22, 50.1, 68.8, 121.5, 292, 532, 1010, 1940, 3880, 7170, 15290, 28130, 55590, 109610, 216770, null]
+      point_style: rectRot
+      point_color: "#9C6BB3"
+  unit: μs

@@ -6,7 +6,7 @@ title: "Software"
 type: "software"
 description: "Free software developed by ArteWil."
 date: 2023-07-16
-lastmod: 2024-05-22
+lastmod: 2024-07-29
 hideMeta: true
 ---
 
@@ -49,6 +49,8 @@ Several implementations of the moving sum of squares.
     ([Julia](https://julialang.org/)),
   * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo)
     ([Mojo](https://www.modular.com/mojo)),
+  * [codeberg.org/vilchy/moving_sum_of_squares_nx](https://codeberg.org/vilchy/moving_sum_of_squares_nx)
+    ([Elixir](https://elixir-lang.org/) + [Nx](https://github.com/elixir-nx/nx)),
   * [codeberg.org/vilchy/idris2-moving-sum](https://codeberg.org/vilchy/idris2-moving-sum)
     ([Idris](https://www.idris-lang.org/)),
 * License: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/),

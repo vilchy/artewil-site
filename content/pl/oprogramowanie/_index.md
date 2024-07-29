@@ -7,7 +7,7 @@ type: "software"
 translationKey: software
 description: "Wolne oprogramowanie rozwijane przez ArteWil."
 date: 2023-07-16
-lastmod: 2024-05-22
+lastmod: 2024-07-29
 hideMeta: true
 ---
 
@@ -50,6 +50,8 @@ Kilka implementacji sumy kroczącej kwadratów.
     ([Julia](https://julialang.org/ "|hreflang:en|lang:en")),
   * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo "|hreflang:en|lang:en")
     ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")),
+  * [codeberg.org/vilchy/moving_sum_of_squares_nx](https://codeberg.org/vilchy/moving_sum_of_squares_nx "|hreflang:en|lang:en")
+    ([Elixir](https://elixir-lang.org/ "|hreflang:en|lang:en") + [Nx](https://github.com/elixir-nx/nx "|hreflang:en|lang:en")),
   * [codeberg.org/vilchy/idris2-moving-sum](https://codeberg.org/vilchy/idris2-moving-sum "|hreflang:en|lang:en")
     ([Idris](https://www.idris-lang.org/ "|hreflang:en|lang:en")),
 * Licencja: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/ "|hreflang:en|lang:en"),

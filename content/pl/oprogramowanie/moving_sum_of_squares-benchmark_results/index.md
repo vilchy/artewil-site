@@ -8,7 +8,7 @@ description: "Wyniki benchmarków kilku implementacji sumy kroczącej kwadratów
 slug: suma_kroczaca_kwadratow-wyniki_benchmarkow
 translationKey: software_moving_sum_of_squares_benchmark_results
 date: 2023-10-28
-lastmod: 2024-06-01
+lastmod: 2024-07-29
 chartJS: true
 mathJax: true
 CCLicense: true
@@ -44,25 +44,49 @@ Kod źródłowy:
 * [codeberg.org/vilchy/MovingSumOfSquares.jl](https://codeberg.org/vilchy/MovingSumOfSquares.jl "|hreflang:en|lang:en")
   ([Julia](https://julialang.org/ "|hreflang:en|lang:en")),
 * [codeberg.org/vilchy/moving-sum-of-squares-mojo](https://codeberg.org/vilchy/moving-sum-of-squares-mojo "|hreflang:en|lang:en")
-  ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")).
+  ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")),
+* [codeberg.org/vilchy/moving_sum_of_squares_nx](https://codeberg.org/vilchy/moving_sum_of_squares_nx "|hreflang:en|lang:en")
+  ([Elixir](https://elixir-lang.org/ "|hreflang:en|lang:en")).
 
 ## Średni czas wykonania w zależności od długości sygnału dla okna o długości 32 próbek
 
-{{< chart data_id="software/moving_sum_of_squares/runtime_vs_signal_len"
+### Szeregowy
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_signal_len_seq"
           type="scatter"
           xscale="logarithmic"
           yscale="logarithmic" >}}
 
-{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_signal_len" >}}
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_signal_len_seq" >}}
+
+### Równoległy
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_signal_len_par"
+          type="scatter"
+          xscale="logarithmic"
+          yscale="logarithmic" >}}
+
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_signal_len_par" >}}
 
 ## Średni czas wykonania w zależności od długości okna dla sygnału o długości 50⋅10⁶ próbek
 
-{{< chart data_id="software/moving_sum_of_squares/runtime_vs_window_len"
+### Szeregowy
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_window_len_seq"
           type="scatter"
           xscale="logarithmic"
           yscale="logarithmic" >}}
 
-{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_window_len" >}}
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_window_len_seq" >}}
+
+### Równoległy
+
+{{< chart data_id="software/moving_sum_of_squares/runtime_vs_window_len_par"
+          type="scatter"
+          xscale="logarithmic"
+          yscale="logarithmic" >}}
+
+{{< benchmark_table data_id="software/moving_sum_of_squares/runtime_vs_window_len_par" >}}
 
 ## Zwięzłość kodu źródłowego
 
@@ -77,10 +101,12 @@ Kod źródłowy:
           yscale="linear" >}}
 
 | Implementacja | Liczba tokenów bez białych znaków | Rozmiar po skompresowaniu (LZMA) [B] |
-|--------------------|----:|----:|
-| Futhark szeregowy  | 283 | 439 |
-| Futhark równoległy | 109 | 266 |
-| Julia szeregowy    | 214 | 486 |
-| Julia równoległy   | 132 | 409 |
-| Mojo szeregowy     | 371 | 585 |
-| Mojo równoległy    | 249 | 540 |
+|----------------------|----:|----:|
+| Futhark szeregowy    | 283 | 439 |
+| Futhark równoległy   | 109 | 266 |
+| Julia szeregowy      | 214 | 486 |
+| Julia równoległy     | 132 | 409 |
+| Mojo szeregowy       | 371 | 585 |
+| Mojo równoległy      | 249 | 540 |
+| Elixir+Nx szeregowy  | 431 | 713 |
+| Elixir+Nx równoległy | 145 | 424 |

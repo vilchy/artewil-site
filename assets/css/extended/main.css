@@ -1,5 +1,5 @@
 /*!
- * SPDX-FileCopyrightText: 2023 Artur Wilniewczyc
+ * SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc
  * SPDX-License-Identifier: MIT
  */
 
@@ -173,6 +173,15 @@ table.benchmark td.worst {
 
 .dark table.benchmark td.worst {
     background-color: #471010;
+}
+
+table.benchmark td.not_available {
+    background-color: #DDD;
+    text-align: center;
+}
+
+.dark table.benchmark td.not_available {
+    background-color: #333;
 }
 
 .cc-footer {

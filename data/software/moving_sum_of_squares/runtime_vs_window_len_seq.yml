@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <code@artewil.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+table:
+  y_unit: "s"
+  y_scale_exponent: -3
+x:
+  label:
+    en: window length [samples]
+    pl: długość okna [próbki]
+    de: Fensterlänge [Abtastwerte]
+  unit:
+    en:
+      one: sample
+      other: samples
+    pl:
+      one: próbka
+      few: próbki
+      many: próbek
+    de:
+      one: Abtastwert
+      other: Abtastwerte
+  values: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+"y":
+  label:
+    en: time [ms]
+    pl: czas [ms]
+    de: Zeit [ms]
+  datasets:
+    - label: Futhark
+      values: [70, 70, 70, 71, 70, 70, 70, 70, 70, 71, 71, 71]
+      point_style: rect
+      point_color: "#B30038"
+    - label: Julia
+      values: [123, 122, 122, 122, 122, 123, 123, 122, 126, 126, 121, 121]
+      point_style: circle
+      point_color: "#4C75FF"
+    - label: Mojo
+      values: [129, 129, 129, 129, 128, 129, 130, 130, 133, 133, 130, 130]
+      point_style: triangle
+      point_color: "#F4900C"
+    - label: Elixir+XLA
+      values: [170, 240, 340, 320, 320, 350, 350, 400, 640, 970, 1700, 2900]
+      point_style: rectRot
+      point_color: "#9C6BB3"
+  unit: ms

@@ -1,0 +1,51 @@
+# SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <code@artewil.com>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+table:
+  y_unit: "s"
+  y_scale_exponent: -6
+x:
+  label:
+    en: signal length [samples]
+    pl: długość sygnału [próbki]
+    de: Signallänge [Abtastwerte]
+  unit:
+    en:
+      one: sample
+      other: samples
+    pl:
+      one: próbka
+      few: próbki
+      many: próbek
+    de:
+      one: Abtastwert
+      other: Abtastwerte
+  values: [2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608, 16777216, 33554432, 67108864]
+"y":
+  label:
+    en: time [μs]
+    pl: czas [μs]
+    de: Zeit [μs]
+  datasets:
+    - label: Futhark GPU
+      values: [29, 29, 29, 31, 35, 40, 49, 71, 110, 193, 559, 1101, 2061, 3943, 8011, 15504]
+      point_style: rectRounded
+      point_color: "#FF0050"
+    - label: Mojo CPU
+      values: [5.9, 5.8, 10.0, 13, 20, 39, 69, 143, 273, 542, 1091, 4115, 8127, 16115, 32177, 63760]
+      point_style: triangle
+      point_color: "#F4900C"
+    - label: Julia CPU
+      values: [12, 12, 13, 17, 25, 41, 83, 152, 269, 547, 1085, 2295, 6074, 11771, 23146, 44967]
+      point_style: circle
+      point_color: "#4063D8"
+    - label: Futhark CPU
+      values: [9.4, 16, 18, 31, 73, 102, 110, 205, 404, 796, 2147, 5188, 10625, 20840, 41964, 84151]
+      point_style: rect
+      point_color: "#B30038"
+    - label: Elixir+XLA CPU
+      values: [21.9, 27.1, 42.0, 68.1, 151, 282, 459, 793, 1500, 3090, 6100, 12050, 22810, 43480, 75000, null]
+      point_style: rectRot
+      point_color: "#9C6BB3"
+  unit: μs

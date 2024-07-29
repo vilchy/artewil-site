@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2023 Artur Wilniewczyc <code@artewil.com>
+ * SPDX-FileCopyrightText: 2023-2024 Artur Wilniewczyc <code@artewil.com>
  * SPDX-License-Identifier: MIT
 */
 const initChart = function (dataText, elementId, type, lang, xscale, yscale) {
@@ -21,9 +21,10 @@ const initChart = function (dataText, elementId, type, lang, xscale, yscale) {
     if (type === 'scatter') {
         chartData = {
             datasets: data.y.datasets.map((dataset) => ({
-                label: dataset.label[lang],
+                label: dataset.label[lang] || dataset.label,
                 pointStyle: dataset.point_style,
                 pointRadius: 6,
+                backgroundColor: dataset.point_color,
                 data: data.x.values.map((x, i) => ({
                     x: x, y: dataset.values[i]
                 }))
