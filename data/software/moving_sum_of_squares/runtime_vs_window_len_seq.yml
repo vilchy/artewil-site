@@ -28,7 +28,7 @@ x:
     pl: czas [ms]
     de: Zeit [ms]
   datasets:
-    - label: Futhark
+    - label: Futhark C
       values: [70, 70, 70, 71, 70, 70, 70, 70, 70, 71, 71, 71]
       point_style: rect
       point_color: "#B30038"
@@ -40,7 +40,7 @@ x:
       values: [129, 129, 129, 129, 128, 129, 130, 130, 133, 133, 130, 130]
       point_style: triangle
       point_color: "#F4900C"
-    - label: Elixir+XLA
+    - label: Elixir EXLA
       values: [170, 240, 340, 320, 320, 350, 350, 400, 640, 970, 1700, 2900]
       point_style: rectRot
       point_color: "#9C6BB3"

@@ -31,11 +31,6 @@ Benchmark results for several implementations of the moving sum of squares (MSS)
 
 where _n_ is signal length, _k_ is window length and \\(0 < k \leq n\\).
 
-The benchmarks were performed on an
-[Intel® Core™ i7-12700](https://ark.intel.com/content/www/us/en/ark/products/134591/intel-core-i712700-processor-25m-cache-up-to-4-90-ghz.html)
-with 16 GiB of RAM and
-[AMD Radeon™ RX 6600 XT](https://www.amd.com/en/products/graphics/amd-radeon-rx-6600-xt).
-
 The source code:
 
 * [codeberg.org/vilchy/moving-sum-of-squares-fut](https://codeberg.org/vilchy/moving-sum-of-squares-fut)
@@ -46,6 +41,20 @@ The source code:
   ([Mojo](https://www.modular.com/mojo)),
 * [codeberg.org/vilchy/moving_sum_of_squares_nx](https://codeberg.org/vilchy/moving_sum_of_squares_nx)
   ([Elixir](https://elixir-lang.org/)).
+
+The benchmarks were performed on an
+[Intel® Core™ i7-12700](https://ark.intel.com/content/www/us/en/ark/products/134591/intel-core-i712700-processor-25m-cache-up-to-4-90-ghz.html)
+with 16 GiB of RAM and
+[AMD Radeon™ RX 6600 XT](https://www.amd.com/en/products/graphics/amd-radeon-rx-6600-xt).
+
+* Futhark: 0.25.4. Backends:
+  [C](https://futhark.readthedocs.io/en/stable/man/futhark-c.html),
+  [Multicore](https://futhark.readthedocs.io/en/stable/man/futhark-multicore.html),
+  [OpenCL](https://futhark.readthedocs.io/en/stable/man/futhark-opencl.html) (GPU).
+* Julia: 1.9.2.
+* Mojo: 24.3.
+* Elixir: 1.16.2. Erlang: 26.2.5.
+  Backend: [EXLA](https://hexdocs.pm/exla/EXLA.html) (CPU, JIT).
 
 ## Mean runtime vs. _signal length_ for _window length_ = 32 samples
 

@@ -28,23 +28,23 @@ x:
     pl: czas [ms]
     de: Zeit [ms]
   datasets:
-    - label: Futhark GPU
+    - label: Futhark OpenCL (GPU)
       values: [7.9, 7.9, 7.5, 8.0, 8.7, 12, 18, 30, 55, 104, 202, 398]
       point_style: rectRounded
       point_color: "#FF0050"
-    - label: Julia CPU
+    - label: Julia (CPU)
       values: [29, 30, 30, 33, 32, 34, 41, 54, 79, 159, 243, 542]
       point_style: circle
       point_color: "#4C75FF"
-    - label: Mojo CPU
+    - label: Mojo (CPU)
       values: [34, 36, 39, 37, 41, 47, 62, 98, 170, 321, 611, 1192]
       point_style: triangle
       point_color: "#F4900C"
-    - label: Futhark CPU
+    - label: Futhark Multicore (CPU)
       values: [54, 56, 58, 59, 60, 62, 102, 197, 430, 873, 1734, 3451]
       point_style: rect
       point_color: "#B30038"
-    - label: Elixir+XLA CPU
+    - label: Elixir EXLA (CPU)
       values: [35, 77, 79, 88, 110, 110, 160, 200, 340, 620, 1200, 2300]
       point_style: rectRot
       point_color: "#9C6BB3"

@@ -32,11 +32,6 @@ Wyniki benchmarków kilku implementacji sumy kroczącej kwadratów (MSS):
 
 gdzie _n_ to długość sygnału, _k_ – długość okna i \\(0 < k \leq n\\).
 
-Benchmarki wykonano na
-[Intel® Core™ i7-12700](https://ark.intel.com/content/www/us/en/ark/products/134591/intel-core-i712700-processor-25m-cache-up-to-4-90-ghz.html "|hreflang:en|lang:en")
-z 16 GiB RAM-u i
-[AMD Radeon™ RX 6600 XT](https://www.amd.com/en/products/graphics/amd-radeon-rx-6600-xt "|hreflang:en|lang:en").
-
 Kod źródłowy:
 
 * [codeberg.org/vilchy/moving-sum-of-squares-fut](https://codeberg.org/vilchy/moving-sum-of-squares-fut "|hreflang:en|lang:en")
@@ -47,6 +42,20 @@ Kod źródłowy:
   ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")),
 * [codeberg.org/vilchy/moving_sum_of_squares_nx](https://codeberg.org/vilchy/moving_sum_of_squares_nx "|hreflang:en|lang:en")
   ([Elixir](https://elixir-lang.org/ "|hreflang:en|lang:en")).
+
+Benchmarki wykonano na
+[Intel® Core™ i7-12700](https://ark.intel.com/content/www/us/en/ark/products/134591/intel-core-i712700-processor-25m-cache-up-to-4-90-ghz.html "|hreflang:en|lang:en")
+z 16 GiB RAM-u i
+[AMD Radeon™ RX 6600 XT](https://www.amd.com/en/products/graphics/amd-radeon-rx-6600-xt "|hreflang:en|lang:en").
+
+* Futhark: 0.25.4. Backendy:
+  [C](https://futhark.readthedocs.io/en/stable/man/futhark-c.html "|hreflang:en|lang:en"),
+  [Multicore](https://futhark.readthedocs.io/en/stable/man/futhark-multicore.html "|hreflang:en|lang:en"),
+  [OpenCL](https://futhark.readthedocs.io/en/stable/man/futhark-opencl.html "|hreflang:en|lang:en") (GPU).
+* Julia: 1.9.2.
+* Mojo: 24.3.
+* Elixir: 1.16.2. Erlang: 26.2.5.
+  Backend: [EXLA](https://hexdocs.pm/exla/EXLA.html "|hreflang:en|lang:en") (CPU, JIT).
 
 ## Średni czas wykonania w zależności od długości sygnału dla okna o długości 32 próbek
 

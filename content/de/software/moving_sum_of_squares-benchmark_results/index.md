@@ -32,11 +32,6 @@ Benchmark-Ergebnisse für verschiedene Implementierungen der gleitenden Quadrats
 
 wobei _n_ die Signallänge, _k_ die Fensterlänge und \\(0 < k \leq n\\) ist.
 
-Die Benchmarks wurden auf einem
-[Intel® Core™ i7-12700](https://ark.intel.com/content/www/de/de/ark/products/134591/intel-core-i712700-processor-25m-cache-up-to-4-90-ghz.html)
-mit 16 GiB RAM und
-[AMD Radeon™ RX 6600 XT](https://www.amd.com/de/products/graphics/amd-radeon-rx-6600-xt) durchgeführt.
-
 Der Quellcode:
 
 * [codeberg.org/vilchy/moving-sum-of-squares-fut](https://codeberg.org/vilchy/moving-sum-of-squares-fut "|hreflang:en|lang:en")
@@ -47,6 +42,20 @@ Der Quellcode:
   ([Mojo](https://www.modular.com/mojo "|hreflang:en|lang:en")),
 * [codeberg.org/vilchy/moving_sum_of_squares_nx](https://codeberg.org/vilchy/moving_sum_of_squares_nx "|hreflang:en|lang:en")
   ([Elixir](https://elixir-lang.org/ "|hreflang:en|lang:en")).
+
+Die Benchmarks wurden auf einem
+[Intel® Core™ i7-12700](https://ark.intel.com/content/www/de/de/ark/products/134591/intel-core-i712700-processor-25m-cache-up-to-4-90-ghz.html)
+mit 16 GiB RAM und
+[AMD Radeon™ RX 6600 XT](https://www.amd.com/de/products/graphics/amd-radeon-rx-6600-xt) durchgeführt.
+
+* Futhark: 0.25.4. Backends:
+  [C](https://futhark.readthedocs.io/en/stable/man/futhark-c.html "|hreflang:en|lang:en"),
+  [Multicore](https://futhark.readthedocs.io/en/stable/man/futhark-multicore.html "|hreflang:en|lang:en"),
+  [OpenCL](https://futhark.readthedocs.io/en/stable/man/futhark-opencl.html "|hreflang:en|lang:en") (GPU).
+* Julia: 1.9.2.
+* Mojo: 24.3.
+* Elixir: 1.16.2. Erlang: 26.2.5.
+  Backend: [EXLA](https://hexdocs.pm/exla/EXLA.html "|hreflang:en|lang:en") (CPU, JIT).
 
 ## Durchschnittliche Laufzeit für verschiedene _Signallängen_ und _Fensterlänge_ = 32 Abtastwerte
 
