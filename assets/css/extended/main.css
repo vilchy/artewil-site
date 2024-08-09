@@ -152,6 +152,7 @@ button#theme-toggle:focus {
 
 canvas.chart {
     margin-bottom: 1em;
+    display: none;
 }
 
 table.benchmark th,
