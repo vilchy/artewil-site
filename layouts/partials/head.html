@@ -81,14 +81,19 @@ https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/partials/head
 
 {{- /* Chart.js */}}
 {{- if .Param "chartJS" -}}
-    <script src=" https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.js"
+        integrity="sha384-tgbB5AKnszdcfwcZtTfuhR3Ko1XZdlDfsLtkxiiAZiVkkXCkFmp+FQFh+V/UTo54"
+        crossorigin="anonymous">
+    </script>
     {{- $hugo_chart := resources.Get "js/hugochart.js" | minify }}
     <script>{{ $hugo_chart.Content | safeJS }}</script>
 {{ end -}}
 
 {{- /* MathJax */}}
 {{- if .Param "mathJax" -}}
-    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"
+        integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei"
+        crossorigin="anonymous">
     </script>
 {{ end -}}
 
