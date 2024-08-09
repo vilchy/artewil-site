@@ -54,4 +54,4 @@ Several implementations of the moving sum of squares.
   * [codeberg.org/vilchy/idris2-moving-sum](https://codeberg.org/vilchy/idris2-moving-sum)
     ([Idris](https://www.idris-lang.org/)),
 * License: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/),
-* [Benchmarks results](moving_sum_of_squares-benchmark_results).
+* [Benchmarks results](moving_sum_of_squares-benchmark_results/).

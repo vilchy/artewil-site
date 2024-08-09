@@ -54,4 +54,4 @@ Verschiedene Implementierungen der gleitenden Quadratsumme.
   * [codeberg.org/vilchy/idris2-moving-sum](https://codeberg.org/vilchy/idris2-moving-sum "|hreflang:en|lang:en")
     ([Idris](https://www.idris-lang.org/ "|hreflang:en|lang:en")),
 * Lizenz: [BSD 3-Clause License](https://opensource.org/license/bsd-3-clause/ "|hreflang:en|lang:en"),
-* [Benchmark-Ergebnisse](gleitende_quadratsumme-benchmark-ergebnisse).
+* [Benchmark-Ergebnisse](gleitende_quadratsumme-benchmark-ergebnisse/).
