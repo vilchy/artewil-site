@@ -7,16 +7,11 @@ SPDX-License-Identifier: MIT
 {{- $data_id := .Get "data_id" -}}
 {{- $canvas_id := printf "chart-%s" $data_id | anchorize -}}
 {{- $data := index site.Data (split $data_id "/") -}}
-<canvas id="{{ $canvas_id }}" class="chart"></canvas>
-<script>
-  (async function () {
-    initChart(
-      {{ $data | jsonify }},
-      '{{ $canvas_id }}',
-      '{{ .Get "type" }}',
-      '{{ site.Language.Lang }}',
-      '{{ .Get "xscale" }}',
-      '{{ .Get "yscale" }}',
-      );
-  })();
-</script>
+<canvas id="{{ $canvas_id }}"
+        class="chart"
+        data-lang="{{ site.Language.Lang }}"
+        data-chart-data="{{ $data | jsonify }}"
+        data-chart-type="{{ .Get "type" }}"
+        data-chart-x-scale="{{ .Get "xscale" }}"
+        data-chart-y-scale="{{ .Get "yscale" }}">
+</canvas>

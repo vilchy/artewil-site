@@ -85,8 +85,8 @@ https://github.com/adityatelange/hugo-PaperMod/blob/master/layouts/partials/head
         integrity="sha384-tgbB5AKnszdcfwcZtTfuhR3Ko1XZdlDfsLtkxiiAZiVkkXCkFmp+FQFh+V/UTo54"
         crossorigin="anonymous">
     </script>
-    {{- $hugo_chart := resources.Get "js/hugochart.js" | minify }}
-    <script>{{ $hugo_chart.Content | safeJS }}</script>
+    {{- $hugo_chart := resources.Get "js/hugochart.js" | minify | fingerprint }}
+    <script src="{{ $hugo_chart.RelPermalink }}"></script>
 {{ end -}}
 
 {{- /* MathJax */}}
